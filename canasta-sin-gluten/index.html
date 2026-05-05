@@ -57,90 +57,16 @@
   <div class="bg-white rounded-2xl shadow-md border border-cream-200 p-6 md:p-8 mb-8">
     <div class="flex items-start gap-3">
       <span class="text-2xl">📍</span>
-      <div>
-        <p class="font-bold text-stone-900">Cómo usar esta página</p>
-        <p class="text-stone-600 text-sm mt-1">Tabla de precios reales verificados en sitios oficiales de cada proveedor. Si encontrás un precio diferente al que ves acá, <strong>tocá el botón "Reportar precio nuevo"</strong> al final de la tabla y nos avisás por WhatsApp para actualizar.</p>
+      <div class="flex-1">
+        <p class="font-bold text-stone-900">Precios actualizados automáticamente</p>
+        <p class="text-stone-600 text-sm mt-1">Esta canasta se actualiza <strong>cada día a las 8:00 AM</strong> con precios verificados desde sitios oficiales. Si ves un precio diferente, <strong>tocá "Reportar precio"</strong> al final y nos avisás por WhatsApp.</p>
+        <p id="last-updated" class="text-xs text-stone-500 mt-2">Cargando últimos precios...</p>
       </div>
     </div>
   </div>
 
-  <h2 class="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4">🥖 Panificados sin gluten</h2>
-  <div class="bg-white rounded-2xl shadow border border-cream-200 overflow-x-auto mb-10">
-    <table class="w-full text-sm">
-      <thead class="bg-brand-50 text-stone-900">
-        <tr>
-          <th class="p-3 text-left">Producto</th>
-          <th class="p-3 text-left">Presentación</th>
-          <th class="p-3 text-right">Precio (Gs.)</th>
-          <th class="p-3 text-left">Proveedor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Pan para hamburguesa</td><td class="p-3">unidad</td><td class="p-3 text-right font-semibold">8.000</td><td class="p-3">Artesanales Gluten Free</td></tr>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Pan de molde lactal</td><td class="p-3">entero</td><td class="p-3 text-right font-semibold">32.000</td><td class="p-3">Artesanales Gluten Free</td></tr>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Pan para pancho</td><td class="p-3">pack 6 unid.</td><td class="p-3 text-right font-semibold">28.000</td><td class="p-3">Artesanales Gluten Free</td></tr>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Pan árabe con leche</td><td class="p-3">pack 6 unid.</td><td class="p-3 text-right font-semibold">28.000</td><td class="p-3">Artesanales Gluten Free</td></tr>
-        <tr class="border-t border-cream-200 bg-brand-50"><td class="p-3 font-medium">🍞 Pan de molde Caprichos de Lili</td><td class="p-3">entero rebanado</td><td class="p-3 text-right font-semibold">35.000</td><td class="p-3"><a href="/pan-sin-gluten/" class="text-brand-500 hover:underline">Caprichos de Lili</a></td></tr>
-        <tr class="border-t border-cream-200 bg-brand-50"><td class="p-3 font-medium">🍔 Pan de hamburguesa Caprichos</td><td class="p-3">pack x4</td><td class="p-3 text-right font-semibold">36.000</td><td class="p-3"><a href="/pan-sin-gluten/" class="text-brand-500 hover:underline">Caprichos de Lili</a></td></tr>
-        <tr class="border-t border-cream-200 bg-brand-50"><td class="p-3 font-medium">🍕 Pre-pizza Caprichos</td><td class="p-3">grande</td><td class="p-3 text-right font-semibold">25.000</td><td class="p-3"><a href="/pan-sin-gluten/" class="text-brand-500 hover:underline">Caprichos de Lili</a></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4">🍝 Pastas sin gluten</h2>
-  <div class="bg-white rounded-2xl shadow border border-cream-200 overflow-x-auto mb-10">
-    <table class="w-full text-sm">
-      <thead class="bg-brand-50 text-stone-900">
-        <tr>
-          <th class="p-3 text-left">Producto</th>
-          <th class="p-3 text-left">Presentación</th>
-          <th class="p-3 text-right">Precio (Gs.)</th>
-          <th class="p-3 text-left">Proveedor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Gnocchi di Patate La Molisana</td><td class="p-3">500g</td><td class="p-3 text-right font-semibold">31.000</td><td class="p-3">Casa Rica</td></tr>
-        <tr class="border-t border-cream-200 bg-brand-50"><td class="p-3 font-medium">🥟 Ñoquis de papa Caprichos</td><td class="p-3">200g (al vacío)</td><td class="p-3 text-right font-semibold">20.000</td><td class="p-3"><a href="/pack-semanal/" class="text-brand-500 hover:underline">Caprichos de Lili</a></td></tr>
-        <tr class="border-t border-cream-200 bg-brand-50"><td class="p-3 font-medium">🍝 Lasaña Caprichos</td><td class="p-3">chica</td><td class="p-3 text-right font-semibold">45.000</td><td class="p-3"><a href="/pack-semanal/" class="text-brand-500 hover:underline">Caprichos de Lili</a></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4">🍪 Galletitas y snacks</h2>
-  <div class="bg-white rounded-2xl shadow border border-cream-200 overflow-x-auto mb-10">
-    <table class="w-full text-sm">
-      <thead class="bg-brand-50 text-stone-900">
-        <tr>
-          <th class="p-3 text-left">Producto</th>
-          <th class="p-3 text-left">Presentación</th>
-          <th class="p-3 text-right">Precio (Gs.)</th>
-          <th class="p-3 text-left">Proveedor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Kukitas Lievito Banana Split</td><td class="p-3">100g</td><td class="p-3 text-right font-semibold">8.500</td><td class="p-3">Los Jardines</td></tr>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Rosquita El Almacén del Celíaco</td><td class="p-3">120g</td><td class="p-3 text-right font-semibold">25.000</td><td class="p-3">Los Jardines</td></tr>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Pepas con dulce de guayaba</td><td class="p-3">unidad</td><td class="p-3 text-right font-semibold">11.000</td><td class="p-3">Artesanales Gluten Free</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4">🥛 Bebidas y otros</h2>
-  <div class="bg-white rounded-2xl shadow border border-cream-200 overflow-x-auto mb-10">
-    <table class="w-full text-sm">
-      <thead class="bg-brand-50 text-stone-900">
-        <tr>
-          <th class="p-3 text-left">Producto</th>
-          <th class="p-3 text-left">Presentación</th>
-          <th class="p-3 text-right">Precio (Gs.)</th>
-          <th class="p-3 text-left">Proveedor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-t border-cream-200"><td class="p-3 font-medium">Leche de avena Nude original</td><td class="p-3">1 litro</td><td class="p-3 text-right font-semibold">33.000</td><td class="p-3">Los Jardines</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <!-- Tabla dinámica generada por JS -->
+  <div id="canasta-dynamic"></div>
 
   <!-- Botón reportar precio -->
   <div class="bg-gradient-to-br from-brand-500 to-brand-700 text-white rounded-2xl p-6 md:p-8 text-center shadow-lg">
@@ -197,5 +123,71 @@
   </div>
   <p class="text-center text-xs text-stone-600 mt-8">© 2026 Caprichos de Lili · Canasta sin gluten Paraguay</p>
 </footer>
+
+<script>
+const CATEGORY_LABELS = {
+  panificados: { icon: '🥖', label: 'Panificados sin gluten' },
+  pastas: { icon: '🍝', label: 'Pastas sin gluten' },
+  galletitas: { icon: '🍪', label: 'Galletitas y snacks' },
+  bebidas: { icon: '🥛', label: 'Bebidas' },
+  harinas: { icon: '🌾', label: 'Harinas y premezclas' },
+  salsas: { icon: '🍅', label: 'Salsas y aderezos' },
+  otros: { icon: '🛒', label: 'Otros productos' }
+};
+
+function fmtGs(n) {
+  return Number(n).toLocaleString('es-PY');
+}
+
+function fmtFecha(iso) {
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('es-PY', { day: 'numeric', month: 'long', year: 'numeric' }) +
+           ' · ' + d.toLocaleTimeString('es-PY', { hour: '2-digit', minute: '2-digit' }) + ' UTC';
+  } catch { return iso; }
+}
+
+async function cargarCanasta() {
+  const container = document.getElementById('canasta-dynamic');
+  const updatedEl = document.getElementById('last-updated');
+  try {
+    const r = await fetch('/data/canasta.json?v=' + Date.now());
+    if (!r.ok) throw new Error('JSON no encontrado');
+    const data = await r.json();
+    updatedEl.innerHTML = `📅 Última actualización: <strong>${fmtFecha(data.updated_at)}</strong> · ${data.total_products} productos · <span class="text-green-600">${data.scraped_count} frescos</span> + ${data.manual_count} verificados manualmente`;
+
+    // Agrupar por categoría
+    const groups = {};
+    for (const p of data.products) {
+      (groups[p.category] = groups[p.category] || []).push(p);
+    }
+
+    const html = [];
+    for (const [cat, items] of Object.entries(groups)) {
+      const meta = CATEGORY_LABELS[cat] || { icon: '🛒', label: cat };
+      html.push(`<h2 class="font-display text-2xl md:text-3xl font-bold text-stone-900 mb-4 mt-10">${meta.icon} ${meta.label}</h2>`);
+      html.push(`<div class="bg-white rounded-2xl shadow border border-cream-200 overflow-x-auto mb-6">`);
+      html.push(`<table class="w-full text-sm"><thead class="bg-brand-50 text-stone-900"><tr><th class="p-3 text-left">Producto</th><th class="p-3 text-left">Presentación</th><th class="p-3 text-right">Precio (Gs.)</th><th class="p-3 text-left">Proveedor</th></tr></thead><tbody>`);
+      for (const p of items) {
+        const rowClass = p.highlight ? 'border-t border-cream-200 bg-brand-50' : 'border-t border-cream-200';
+        const fresh = p.source === 'scrape' ? '<span class="ml-2 inline-block bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">fresco</span>' : '';
+        const providerText = p.highlight
+          ? `<a href="/pack-semanal/" class="text-brand-500 hover:underline">${p.provider}</a>`
+          : p.provider;
+        const sizeText = p.size || '—';
+        html.push(`<tr class="${rowClass}"><td class="p-3 font-medium">${p.name}${fresh}</td><td class="p-3">${sizeText}</td><td class="p-3 text-right font-semibold">${fmtGs(p.price)}</td><td class="p-3">${providerText}</td></tr>`);
+      }
+      html.push(`</tbody></table></div>`);
+    }
+    container.innerHTML = html.join('');
+  } catch (e) {
+    container.innerHTML = `<div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">⚠️ No se pudieron cargar los precios. <a href="https://wa.me/595985381866" class="text-brand-500 font-semibold">Avisanos por WhatsApp</a> y revisamos.</div>`;
+    updatedEl.textContent = '';
+    console.error(e);
+  }
+}
+
+cargarCanasta();
+</script>
 </body>
 </html>
