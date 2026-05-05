@@ -1,0 +1,22 @@
+# Build artifacts
+caprichos-deploy.zip
+
+# Source assets (no need in repo, kept locally)
+fotos/
+LIBROFINALPARAAMAZON/
+
+# Memory files (Claude personal context)
+memory/
+
+# Legacy docs not needed in production
+BRIEFING-SEO.md
+PROYECTO.md
+menu_caprichos_de_lili-1*.html
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
