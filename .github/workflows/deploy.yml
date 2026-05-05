@@ -1,0 +1,33 @@
+name: Deploy a Cloudflare Workers (sitio Caprichos)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generar wrangler.toml para Worker estático
+        run: |
+          cat > wrangler.toml <<'EOF'
+          name = "caprichosdelili"
+          compatibility_date = "2026-01-01"
+
+          [assets]
+          directory = "."
+          not_found_handling = "404-page"
+
+          [observability]
+          enabled = true
+          EOF
+
+      - name: Deploy con Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
