@@ -18,7 +18,6 @@ Hecho por la **Dra. Norma Liliana Borja** (médica neonatóloga celíaca) y **Ro
 - `/comida-sin-gluten-asuncion/` — Comida sin gluten hub
 - `/recetas-sin-gluten/` — Recetas con Recipe Schema
 - `/celiacos-asuncion/` — Guía celiaquía
-- `/canasta-sin-gluten/` — Precios reales
 - `/contacto/` — Formulario WhatsApp
 - `/libro-recetas-sin-gluten/` — Libro Amazon Kindle
 - `/blog/` — Hub blog + 8 posts

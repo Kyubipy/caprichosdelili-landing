@@ -97,8 +97,21 @@ tailwind.config = { theme: { extend: { colors: { brand: { 50:'#fff5f1', 100:'#ff
       <a href="/libro-recetas-sin-gluten/" class="hover:text-brand-400">Libro</a>
       <a href="https://wa.me/595985381866" target="_blank" rel="noopener" class="bg-brand-500 text-white px-4 py-2 rounded-full hover:bg-brand-400">WhatsApp</a>
     </nav>
+    <button id="menuBtn" aria-label="Abrir menu" class="md:hidden p-2 -mr-2 text-stone-700"><svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-cream-200 bg-cream-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 text-base font-medium text-stone-700">
+      <a href="/" class="py-2 hover:text-brand-400">Inicio</a>
+      <a href="/pack-semanal/" class="py-2 hover:text-brand-400">Menu</a>
+      <a href="/pan-sin-gluten/" class="py-2 hover:text-brand-400">Pan sin gluten</a>
+      <a href="/blog/" class="py-2 hover:text-brand-400">Blog</a>
+      <a href="/libro-recetas-sin-gluten/" class="py-2 hover:text-brand-400">Libro</a>
+      <a href="/contacto/" class="py-2 hover:text-brand-400">Contacto</a>
+      <a href="https://wa.me/595985381866" target="_blank" rel="noopener" class="bg-brand-500 text-white px-4 py-2 rounded-full text-center hover:bg-brand-400 mt-2">WhatsApp</a>
+    </nav>
   </div>
 </header>
+<script>document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('mobileMenu').classList.toggle('hidden')});</script>
 
 <nav class="max-w-6xl mx-auto px-4 py-3 text-sm text-stone-600">
   <a href="/" class="hover:text-brand-500">Inicio</a> <span class="mx-2">›</span>
