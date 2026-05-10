@@ -54,6 +54,8 @@ tailwind.config = {
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://wa.me">
+<link rel="preload" as="image" href="/assets/img/hero-plato.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
 
 <style>
@@ -77,28 +79,95 @@ tailwind.config = {
       "url": "https://caprichosdelili.com/",
       "logo": "https://caprichosdelili.com/assets/img/logo.png",
       "email": "contacto@caprichosdelili.com",
+      "telephone": "+595985381866",
       "founder": [
         { "@id": "https://caprichosdelili.com/#lili" },
         { "@id": "https://caprichosdelili.com/#roberto" }
       ],
-      "areaServed": { "@type": "City", "name": "Asunción", "containedInPlace": { "@type": "Country", "name": "Paraguay" } }
+      "areaServed": { "@type": "City", "name": "Asunción", "containedInPlace": { "@type": "Country", "name": "Paraguay" } },
+      "sameAs": [
+        "https://www.instagram.com/caprichosdelili",
+        "https://wa.me/595985381866"
+      ]
     },
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness","FoodEstablishment"],
       "@id": "https://caprichosdelili.com/#business",
       "name": "Caprichos de Lili",
       "image": "https://caprichosdelili.com/assets/img/og-caprichos-2026.jpg",
       "description": "Comida sin gluten elaborada por una médica celíaca. Menú congelado al vacío con 3 días de anticipación. Asunción, Paraguay.",
       "url": "https://caprichosdelili.com/",
       "telephone": "+595985381866",
-      "priceRange": "₲₲",
-      "address": { "@type": "PostalAddress", "addressLocality": "Asunción", "addressCountry": "PY" },
+      "priceRange": "Gs. 20.000 - Gs. 350.000",
+      "currenciesAccepted": "PYG",
+      "paymentAccepted": "Efectivo, Transferencia bancaria, Tarjeta de crédito",
+      "address": { "@type": "PostalAddress", "addressLocality": "Asunción", "addressRegion": "Central", "addressCountry": "PY" },
       "geo": { "@type": "GeoCoordinates", "latitude": -25.2637, "longitude": -57.5759 },
-      "servesCuisine": ["Sin gluten","Sin TACC","Sin azúcar","Paraguaya saludable"],
+      "areaServed": [
+        { "@type": "City", "name": "Asunción" },
+        { "@type": "City", "name": "Lambaré" },
+        { "@type": "City", "name": "Fernando de la Mora" },
+        { "@type": "City", "name": "San Lorenzo" },
+        { "@type": "City", "name": "Luque" },
+        { "@type": "City", "name": "Mariano Roque Alonso" },
+        { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": -25.2637, "longitude": -57.5759 }, "geoRadius": 25000 }
+      ],
+      "servesCuisine": ["Sin gluten","Sin TACC","Sin azúcar","Celíaca","Paraguaya saludable"],
+      "knowsAbout": ["Celiaquía","Sin gluten","Sin TACC","Contaminación cruzada","Dieta sin gluten"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Menú sin gluten congelado al vacío",
+        "itemListElement": [
+          { "@type": "Offer", "url": "https://caprichosdelili.com/#noquis", "itemOffered": { "@id": "https://caprichosdelili.com/#noquis" } },
+          { "@type": "Offer", "url": "https://caprichosdelili.com/#pan", "itemOffered": { "@id": "https://caprichosdelili.com/#pan" } },
+          { "@type": "Offer", "url": "https://caprichosdelili.com/#lasagna", "itemOffered": { "@id": "https://caprichosdelili.com/#lasagna" } },
+          { "@type": "Offer", "url": "https://caprichosdelili.com/#pizza", "itemOffered": { "@id": "https://caprichosdelili.com/#pizza" } }
+        ]
+      },
       "makesOffer": [
         { "@type": "Offer", "name": "Menú congelado al vacío", "url": "https://caprichosdelili.com/pack-semanal/" },
         { "@type": "Offer", "name": "Recetario sin gluten (Kindle)", "url": "https://caprichosdelili.com/libro-recetas-sin-gluten/" }
       ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://caprichosdelili.com/#noquis",
+      "name": "Ñoquis de Papa Sin Gluten 200g",
+      "description": "Ñoquis de papa artesanales sin gluten ni TACC. Receta tradicional adaptada para celíacos. Listos para hervir, congelados al vacío.",
+      "image": "https://caprichosdelili.com/assets/img/noquis-real.jpg",
+      "brand": { "@id": "https://caprichosdelili.com/#org" },
+      "category": "Comida sin gluten / Pasta",
+      "offers": { "@type": "Offer", "price": "20000", "priceCurrency": "PYG", "availability": "https://schema.org/InStock", "url": "https://caprichosdelili.com/pack-semanal/", "seller": { "@id": "https://caprichosdelili.com/#org" } }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://caprichosdelili.com/#pan",
+      "name": "Pan de Molde Sin Gluten Artesanal",
+      "description": "Pan rebanado de fermentación lenta con harina de trigo sarraceno y harinas seleccionadas. Sin gluten, ideal para sándwich diario.",
+      "image": "https://caprichosdelili.com/assets/img/pan-molde-real.jpg",
+      "brand": { "@id": "https://caprichosdelili.com/#org" },
+      "category": "Comida sin gluten / Panificados",
+      "offers": { "@type": "Offer", "price": "35000", "priceCurrency": "PYG", "availability": "https://schema.org/InStock", "url": "https://caprichosdelili.com/pan-sin-gluten/", "seller": { "@id": "https://caprichosdelili.com/#org" } }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://caprichosdelili.com/#lasagna",
+      "name": "Lasaña Especial Sin Gluten (Chica)",
+      "description": "Lasaña sin gluten con carne de primera, 120g de crema de leche y triple queso. Congelada al vacío, lista para horno.",
+      "image": "https://caprichosdelili.com/assets/img/lasagna-real.jpg",
+      "brand": { "@id": "https://caprichosdelili.com/#org" },
+      "category": "Comida sin gluten / Platos preparados",
+      "offers": { "@type": "Offer", "price": "45000", "priceCurrency": "PYG", "availability": "https://schema.org/InStock", "url": "https://caprichosdelili.com/pack-semanal/", "seller": { "@id": "https://caprichosdelili.com/#org" } }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://caprichosdelili.com/#pizza",
+      "name": "Pre-pizza Grande Sarraceno Sin Gluten",
+      "description": "Masa de pizza grande sin gluten elaborada con harina de trigo sarraceno. Congelada al vacío. Solo agregás toppings y al horno.",
+      "image": "https://caprichosdelili.com/assets/img/prepizza-real.jpg",
+      "brand": { "@id": "https://caprichosdelili.com/#org" },
+      "category": "Comida sin gluten / Pizzas",
+      "offers": { "@type": "Offer", "price": "25000", "priceCurrency": "PYG", "availability": "https://schema.org/InStock", "url": "https://caprichosdelili.com/pack-semanal/", "seller": { "@id": "https://caprichosdelili.com/#org" } }
     },
     {
       "@type": "WebSite",
@@ -106,16 +175,48 @@ tailwind.config = {
       "url": "https://caprichosdelili.com/",
       "name": "Caprichos de Lili",
       "publisher": { "@id": "https://caprichosdelili.com/#org" },
-      "inLanguage": "es-PY"
+      "inLanguage": "es-PY",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://caprichosdelili.com/blog/?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://caprichosdelili.com/#webpage",
+      "url": "https://caprichosdelili.com/",
+      "name": "Caprichos de Lili — Comida sin gluten en Asunción",
+      "isPartOf": { "@id": "https://caprichosdelili.com/#website" },
+      "about": { "@id": "https://caprichosdelili.com/#business" },
+      "inLanguage": "es-PY",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".speakable-summary"]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://caprichosdelili.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿La comida es 100% libre de gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Trabajamos en una cocina dedicada exclusivamente a productos sin gluten ni TACC, sin contaminación cruzada. La fundadora es médica pediatra y celíaca, así que conocemos los riesgos y los evitamos rigurosamente." } },
+        { "@type": "Question", "name": "¿Hacen delivery en Asunción?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, hacemos delivery en Asunción y Gran Asunción (Lambaré, Fernando de la Mora, San Lorenzo, Luque, Mariano Roque Alonso). Para coordinar entrega contactanos por WhatsApp al 0985 381866." } },
+        { "@type": "Question", "name": "¿Con cuánta anticipación tengo que pedir?", "acceptedAnswer": { "@type": "Answer", "text": "Recomendamos pedir con al menos 3 días de anticipación. Cocinamos por encargo para garantizar frescura y calidad — no producimos en serie ni almacenamos stock vencido." } },
+        { "@type": "Question", "name": "¿Cómo conservo los productos congelados al vacío?", "acceptedAnswer": { "@type": "Answer", "text": "Llegan congelados al vacío. Guardalos en el freezer hasta el día de consumo. Para descongelar, pasalos a la heladera la noche anterior. Los pre-pizza y lasaña van directo del freezer al horno." } },
+        { "@type": "Question", "name": "¿Tienen recetario o libro de recetas sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Publicamos un recetario sin gluten en Amazon Kindle escrito por la Dra. Norma Borja, pediatra neonatóloga celíaca. Disponible en todas las tiendas Amazon (US, ES, MX, etc.)." } },
+        { "@type": "Question", "name": "¿Aceptan tarjeta de crédito?", "acceptedAnswer": { "@type": "Answer", "text": "Aceptamos efectivo, transferencia bancaria y tarjeta de crédito. La forma de pago se coordina al confirmar el pedido por WhatsApp." } }
+      ]
     },
     {
       "@type": "Person",
       "@id": "https://caprichosdelili.com/#lili",
       "name": "Dra. Norma Liliana Borja",
       "jobTitle": "Médica Pediatra Neonatóloga",
-      "description": "Médica pediatra neonatóloga, diagnosticada con celiquía a los 34 años. Co-fundadora de Caprichos de Lili y co-autora del recetario sin gluten.",
+      "description": "Médica pediatra neonatóloga, diagnosticada con celiaquía a los 34 años. Co-fundadora de Caprichos de Lili y co-autora del recetario sin gluten.",
       "knowsAbout": ["Celiaquía","Cocina sin gluten","Nutrición infantil","Pediatría","Neonatología"],
-      "nationality": "PY"
+      "knowsLanguage": ["es-PY","es"],
+      "nationality": "PY",
+      "worksFor": { "@id": "https://caprichosdelili.com/#org" }
     },
     {
       "@type": "Person",
@@ -123,7 +224,8 @@ tailwind.config = {
       "name": "Abog. Roberto Rodas",
       "jobTitle": "Co-fundador y Director de Procesos",
       "description": "Co-fundador de Caprichos de Lili y co-autor del recetario.",
-      "nationality": "PY"
+      "nationality": "PY",
+      "worksFor": { "@id": "https://caprichosdelili.com/#org" }
     }
   ]
 }
