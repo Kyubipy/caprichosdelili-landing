@@ -1,0 +1,25 @@
+{
+  "name": "Caprichos de Lili — Comida sin gluten en Asunción",
+  "short_name": "Caprichos de Lili",
+  "description": "Comida sin gluten elaborada por una médica celíaca en Asunción, Paraguay. Menú congelado al vacío.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf6ee",
+  "theme_color": "#e0492c",
+  "lang": "es-PY",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/assets/img/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
