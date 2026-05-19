@@ -20,3 +20,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Helper scripts (no van a produccion)
+generate_*.py
+update_*.py
