@@ -97,4 +97,22 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://caprichosdelili.com/sobre-nosotros/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+  <url>
+    <loc>https://caprichosdelili.com/politica-privacidad/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+  <url>
+    <loc>https://caprichosdelili.com/terminos-condiciones/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2026-07-06</lastmod>
+  </url>
 </urlset>
