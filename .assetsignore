@@ -11,3 +11,4 @@ memory/
 .assetsignore
 package*.json
 wrangler.toml
+CLAUDE.md
