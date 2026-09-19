@@ -10,6 +10,7 @@ Sitio comercial de comida sin gluten (dark kitchen, Asunción PY). HTML estátic
 - Naming: "Pizzeta XL" (no "pre-pizza"), milanesas sin el adjetivo "grandes".
 - Es dark kitchen: SIN dirección pública, horario WhatsApp L-V 8:00-19:00, pedidos con 3 días de anticipación, todo congelado al vacío. No es restaurante.
 - Autora médica de los posts: "Dra. Norma Liliana Borja". Tono: español paraguayo (vos), cálido y honesto.
+- **Eventos** (`/eventos-sin-gluten/`, 18-sep-2026): preparamos las porciones de los invitados celíacos (bodas, 15 años, cenas, cumpleaños), sin gluten y sin lactosa a pedido. Siempre decir que llegan **congeladas al vacío** (se descongelan en heladera). NO prometer servicio en el salón, mozos ni "coordinar con el catering del salón"; NO precios de eventos (solo presupuesto por WhatsApp); NO listar un menú fijo de eventos.
 
 ## Pipeline de publicación de un post
 
