@@ -130,6 +130,7 @@ tailwind.config = {
       },
       "makesOffer": [
         { "@type": "Offer", "name": "Menú congelado al vacío", "url": "https://caprichosdelili.com/pack-semanal/" },
+        { "@type": "Offer", "name": "Menú sin gluten para eventos (bodas, 15 años, cenas)", "url": "https://caprichosdelili.com/eventos-sin-gluten/" },
         { "@type": "Offer", "name": "Recetario sin gluten (Kindle)", "url": "https://caprichosdelili.com/libro-recetas-sin-gluten/" }
       ],
       "openingHoursSpecification": [
@@ -250,6 +251,7 @@ tailwind.config = {
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-stone-700">
       <a href="/pack-semanal/" class="hover:text-brand-400 transition">Menú</a>
+      <a href="/eventos-sin-gluten/" class="hover:text-brand-400 transition">Eventos</a>
       <a href="/pan-sin-gluten/" class="hover:text-brand-400 transition">Pan sin gluten</a>
       <a href="/blog/" class="hover:text-brand-400 transition">Blog</a>
       <a href="/libro-recetas-sin-gluten/" class="hover:text-brand-400 transition">Libro</a>
@@ -262,6 +264,7 @@ tailwind.config = {
     <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 text-base font-medium text-stone-700">
       <a href="/" class="py-2 hover:text-brand-400">Inicio</a>
       <a href="/pack-semanal/" class="py-2 hover:text-brand-400">Menu</a>
+      <a href="/eventos-sin-gluten/" class="py-2 hover:text-brand-400">Eventos</a>
       <a href="/pan-sin-gluten/" class="py-2 hover:text-brand-400">Pan sin gluten</a>
       <a href="/blog/" class="py-2 hover:text-brand-400">Blog</a>
       <a href="/libro-recetas-sin-gluten/" class="py-2 hover:text-brand-400">Libro</a>
@@ -379,6 +382,37 @@ tailwind.config = {
   </div>
 </section>
 
+<!-- Eventos sin gluten -->
+<section id="eventos" class="py-20 bg-white relative overflow-hidden">
+  <div class="absolute -top-24 -left-24 w-80 h-80 bg-[#c8a35a]/15 rounded-full blur-3xl"></div>
+  <div class="relative max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div class="relative order-2 md:order-1">
+      <div class="rounded-3xl overflow-hidden shadow-2xl shadow-[#c8a35a]/20 ring-1 ring-[#c8a35a]/30">
+        <img src="/assets/img/eventos-hero.webp" alt="Mesa de celebración con menú sin gluten para invitados celíacos — Caprichos de Lili" width="1200" height="630" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="absolute -bottom-5 left-6 right-6 grid grid-cols-3 gap-2 text-center text-xs font-semibold">
+        <span class="bg-cream-50 border border-cream-200 rounded-full py-2 shadow">Bodas</span>
+        <span class="bg-cream-50 border border-cream-200 rounded-full py-2 shadow">15 años</span>
+        <span class="bg-cream-50 border border-cream-200 rounded-full py-2 shadow">Cenas</span>
+      </div>
+    </div>
+    <div class="order-1 md:order-2">
+      <p class="text-[#8f6f2c] font-bold uppercase tracking-widest text-xs mb-4">Eventos · Sin gluten y sin lactosa</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight text-stone-900">¿Un invitado celíaco en tu <span class="text-brand-400 italic">fiesta</span>?</h2>
+      <p class="mt-6 text-stone-700 text-lg">Los organizadores nos llaman cuando en la lista de la boda, los quince o la cena hay alguien que no puede comer gluten. Preparamos su menú <strong class="text-stone-900">sin gluten</strong> — y <strong class="text-stone-900">sin lactosa</strong> si hace falta — en una cocina 100% libre de TACC, para que brinde con la misma tranquilidad que todos.</p>
+      <ul class="mt-6 space-y-2 text-stone-700 text-sm">
+        <li class="flex gap-3"><span class="text-[#c8a35a]">✦</span>Menú a medida, coherente con lo que comen los demás invitados</li>
+        <li class="flex gap-3"><span class="text-[#c8a35a]">✦</span>Porciones congeladas al vacío, listas para descongelar, calentar y servir aparte</li>
+        <li class="flex gap-3"><span class="text-[#c8a35a]">✦</span>Coordinación directa con la familia o con quien organiza el evento</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/eventos-sin-gluten/" class="bg-brand-500 text-white px-7 py-3.5 rounded-full font-semibold hover:bg-brand-400 transition shadow-lg shadow-brand-500/40">Menú para eventos</a>
+        <a href="https://wa.me/595985381866?text=Hola%20Caprichos%20de%20Lili%2C%20tengo%20un%20evento%20con%20invitados%20cel%C3%ADacos%20y%20necesito%20men%C3%BA%20sin%20gluten" target="_blank" rel="noopener" class="border-2 border-stone-300 text-stone-900 px-7 py-3.5 rounded-full font-semibold hover:border-brand-400 hover:text-brand-400 transition">Coordinar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Libro Amazon -->
 <section class="py-20 bg-gradient-to-br from-white via-cream-100 to-brand-dark/40 relative overflow-hidden">
   <div class="absolute -top-20 right-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
@@ -447,6 +481,7 @@ tailwind.config = {
       <h4 class="font-bold text-stone-900 mb-3">Productos</h4>
       <ul class="space-y-2">
         <li><a href="/pack-semanal/" class="hover:text-brand-400 transition">Menú</a></li>
+        <li><a href="/eventos-sin-gluten/" class="hover:text-brand-400 transition">Menú para eventos</a></li>
         <li><a href="/libro-recetas-sin-gluten/" class="hover:text-brand-400 transition">Libro recetario</a></li>
       </ul>
     </div>

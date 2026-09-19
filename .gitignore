@@ -24,3 +24,4 @@ Thumbs.db
 # Helper scripts (no van a produccion)
 generate_*.py
 update_*.py
+.claude/

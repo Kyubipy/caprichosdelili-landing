@@ -80,11 +80,9 @@ tailwind.config = { theme: { extend: { colors: { brand: { 50:'#fff5f1', 100:'#ff
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "¿Dónde comprar comida sin gluten en Asunción?", "acceptedAnswer": { "@type": "Answer", "text": "Caprichos de Lili ofrece delivery de comida sin gluten en Asunción y Gran Asunción. Hacemos lasaña, ñoquis, milanesas, pan, Pizzeta XL y salsas sin TACC. Pedidos por WhatsApp al 0985 381866 con 3 días de anticipación." } },
-        { "@type": "Question", "name": "¿Hay restaurantes para celíacos en Asunción?", "acceptedAnswer": { "@type": "Answer", "text": "Hay opciones limitadas de restaurantes 100% sin gluten en Asunción. Caprichos de Lili cubre esta necesidad con comida congelada al vacío entregada a domicilio, evitando contaminación cruzada total porque nuestra cocina es exclusivamente sin gluten." } },
-        { "@type": "Question", "name": "¿Hacen delivery sin gluten en Lambaré, Luque, San Lorenzo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Hacemos envío a domicilio en Asunción, Lambaré, Luque, Fernando de la Mora, San Lorenzo y zonas cercanas del Gran Asunción. También se puede coordinar pasar a buscar." } },
-        { "@type": "Question", "name": "¿Qué tipos de comida sin gluten ofrecen?", "acceptedAnswer": { "@type": "Answer", "text": "Lasaña sin gluten, ñoquis de papa sin gluten, milanesas de carne y pollo sin gluten, pan de molde, pan de hamburguesa, Pizzeta XL, salsa boloñesa y salsa de pizza. Todos congelados al vacío y aptos para celíacos." } },
-        { "@type": "Question", "name": "¿La comida sin gluten Asunción es más cara que la común?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, generalmente cuesta entre 30 y 80 por ciento más. Los ingredientes sin gluten (harinas especiales, mandioca, sarraceno) cuestan más, y se requiere cocina dedicada para evitar contaminación cruzada con trigo." } }
+        {"@type": "Question", "name": "¿Hay restaurantes 100% sin gluten en Asunción?", "acceptedAnswer": {"@type": "Answer", "text": "Las opciones de restaurantes 100% sin gluten en Asunción son limitadas. La mayoría son cocinas mixtas con riesgo de contaminación. Caprichos de Lili es una cocina exclusivamente sin gluten."}},
+        {"@type": "Question", "name": "¿Aceptan pedidos para eventos sin gluten?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Preparamos el menú sin gluten (y sin lactosa si hace falta) de los invitados celíacos en bodas, quince años, cenas, cumpleaños y reuniones familiares. Coordinamos por WhatsApp con anticipación."}},
+        {"@type": "Question", "name": "¿Cuánto tiempo dura la comida congelada al vacío?", "acceptedAnswer": {"@type": "Answer", "text": "Hasta 3 meses en freezer manteniendo todas sus propiedades. Una vez descongelada, consumir en 24-48 horas."}}
       ]
     }
   ]
@@ -101,6 +99,7 @@ tailwind.config = { theme: { extend: { colors: { brand: { 50:'#fff5f1', 100:'#ff
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-stone-700">
       <a href="/pack-semanal/" class="hover:text-brand-400">Menú</a>
+      <a href="/eventos-sin-gluten/" class="hover:text-brand-400">Eventos</a>
       <a href="/pan-sin-gluten/" class="hover:text-brand-400">Pan sin gluten</a>
       <a href="/recetas-sin-gluten/" class="hover:text-brand-400">Recetas</a>
       <a href="/libro-recetas-sin-gluten/" class="hover:text-brand-400">Libro</a>
@@ -112,6 +111,7 @@ tailwind.config = { theme: { extend: { colors: { brand: { 50:'#fff5f1', 100:'#ff
     <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 text-base font-medium text-stone-700">
       <a href="/" class="py-2 hover:text-brand-400">Inicio</a>
       <a href="/pack-semanal/" class="py-2 hover:text-brand-400">Menu</a>
+      <a href="/eventos-sin-gluten/" class="py-2 hover:text-brand-400">Eventos</a>
       <a href="/pan-sin-gluten/" class="py-2 hover:text-brand-400">Pan sin gluten</a>
       <a href="/blog/" class="py-2 hover:text-brand-400">Blog</a>
       <a href="/libro-recetas-sin-gluten/" class="py-2 hover:text-brand-400">Libro</a>
@@ -175,7 +175,7 @@ tailwind.config = { theme: { extend: { colors: { brand: { 50:'#fff5f1', 100:'#ff
 
   <h2 class="font-display text-3xl md:text-4xl font-bold mt-12">Preguntas frecuentes</h2>
   <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 mt-4 cursor-pointer"><summary class="font-semibold">¿Hay restaurantes 100% sin gluten en Asunción?</summary><p class="mt-3">Las opciones de restaurantes 100% sin gluten en Asunción son limitadas. La mayoría son cocinas mixtas con riesgo de contaminación. Caprichos de Lili es una cocina exclusivamente sin gluten.</p></details>
-  <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 mt-4 cursor-pointer"><summary class="font-semibold">¿Aceptan pedidos para eventos sin gluten?</summary><p class="mt-3">Sí, hacemos catering sin gluten para cumpleaños, reuniones familiares y eventos pequeños. Coordinamos por WhatsApp con anticipación.</p></details>
+  <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 mt-4 cursor-pointer"><summary class="font-semibold">¿Aceptan pedidos para eventos sin gluten?</summary><p class="mt-3">Sí. Preparamos el menú sin gluten (y sin lactosa si hace falta) de los invitados celíacos en bodas, quince años, cenas, cumpleaños y reuniones familiares. Coordinamos por WhatsApp con anticipación. <a href="/eventos-sin-gluten/" class="text-brand-500 font-semibold hover:underline">Ver menú para eventos →</a></p></details>
   <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 mt-4 cursor-pointer"><summary class="font-semibold">¿Cuánto tiempo dura la comida congelada al vacío?</summary><p class="mt-3">Hasta 3 meses en freezer manteniendo todas sus propiedades. Una vez descongelada, consumir en 24-48 horas.</p></details>
 </section>
 
