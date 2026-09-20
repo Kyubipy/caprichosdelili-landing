@@ -33,19 +33,102 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Pan sin gluten industrial vs artesanal", "item": "https://caprichosdelili.com/blog/pan-sin-gluten-industrial-vs-artesanal/" }
-    ]},
-    { "@type": "Article", "headline": "Pan sin gluten industrial vs artesanal: diferencias reales que importan al celíaco", "image": "https://caprichosdelili.com/assets/img/blog/pan-sin-gluten-industrial-vs-artesanal.webp", "datePublished": "2026-06-27", "dateModified": "2026-06-27", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "Comparación honesta entre pan sin gluten industrial y artesanal: aditivos, índice glucémico, contaminación cruzada, masa madre y qué importa realmente al celíaco." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿El pan sin gluten industrial es peor que el artesanal para un celíaco?", "acceptedAnswer": { "@type": "Answer", "text": "No automáticamente. Lo que define si un pan es seguro para celíaco es la certificación libre de gluten y la trazabilidad de la elaboración, no que sea industrial o artesanal. Un pan industrial elaborado en planta dedicada 100% sin gluten puede ser más seguro que un pan artesanal hecho en panadería mixta donde se procesa trigo. Lo que sí difiere es el perfil nutricional: el industrial suele tener más aditivos, más grasas añadidas y carbohidratos refinados, mientras que el artesanal con masa madre y harinas integrales tiende a un perfil más limpio y digerible." } },
-      { "@type": "Question", "name": "¿Qué es la HPMC en el pan sin gluten industrial y es segura?", "acceptedAnswer": { "@type": "Answer", "text": "La HPMC (hidroxipropilmetilcelulosa, E-464) es el sustituto del gluten más utilizado en panificación sin gluten industrial. Cumple la función estructural que cumplía el gluten: retiene gas, da elasticidad y miga. La EFSA la considera segura en las cantidades usadas en alimentos; no se digiere ni se absorbe en el intestino humano, se elimina por las heces. No es tóxica ni cancerígena. La crítica honesta es que reemplaza la fermentación verdadera con química industrial — no es un riesgo de seguridad, es una decisión de calidad y digestibilidad." } },
-      { "@type": "Question", "name": "¿Por qué el pan sin gluten tiene índice glucémico alto?", "acceptedAnswer": { "@type": "Answer", "text": "Porque está formulado sobre almidones refinados (arroz, maíz, tapioca) que son pobres en fibra y se digieren muy rápido. Estudios sobre productos típicos miden un índice glucémico de alrededor de 75 (rango alto, típicamente 70-80). Esto importa especialmente para celíacos con diabetes, prediabetes o resistencia a la insulina. La fermentación con masa madre, la incorporación de harinas integrales (sorgo, trigo sarraceno, mijo) y semillas con fibra (chía, lino, psyllium) pueden bajar el IG hasta valores medios, pero no esperes que un pan sin gluten estándar tenga el comportamiento glucémico de un pan integral de trigo." } },
-      { "@type": "Question", "name": "¿Qué aporta la masa madre a un pan sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "La fermentación con masa madre (bacterias acidolácticas y levaduras silvestres) hidroliza los fitatos de las harinas, lo que aumenta la biodisponibilidad de hierro, zinc, magnesio y vitaminas del grupo B. Además genera exopolisacáridos que actúan como prebióticos para la microbiota intestinal, mejora el perfil aromático, la textura y la digestibilidad. Como bonus práctico, la acidificación natural retrasa el desarrollo de mohos y prolonga la vida útil del pan sin necesidad de conservantes químicos. El efecto sobre el índice glucémico es positivo pero menor que en panes con gluten." } },
-      { "@type": "Question", "name": "¿Cómo sé si un pan sin gluten es realmente seguro para celíaco?", "acceptedAnswer": { "@type": "Answer", "text": "Buscá tres señales concretas: primero, el logo oficial sin gluten (en Argentina rige el logo nuevo desde el 1 de diciembre de 2023; el estándar internacional Codex permite hasta 20 ppm de gluten residual y Argentina exige ≤10 ppm). Segundo, elaboración en cocina dedicada 100% sin gluten — sin convivencia con trigo en el mismo espacio. Tercero, mención del método de análisis: el oficial validado es el ELISA R5 Méndez. Un pan sin estas señales, aunque diga sin gluten en el frente, no ofrece garantía suficiente para un celíaco diagnosticado." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pan sin gluten industrial vs artesanal",
+          "item": "https://caprichosdelili.com/blog/pan-sin-gluten-industrial-vs-artesanal/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Pan sin gluten industrial vs artesanal: diferencias reales que importan al celíaco",
+      "image": "https://caprichosdelili.com/assets/img/blog/pan-sin-gluten-industrial-vs-artesanal.webp",
+      "datePublished": "2026-06-27",
+      "dateModified": "2026-06-27",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "Comparación honesta entre pan sin gluten industrial y artesanal: aditivos, índice glucémico, contaminación cruzada, masa madre y qué importa realmente al celíaco.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/pan-sin-gluten-industrial-vs-artesanal/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿El pan sin gluten industrial es peor que el artesanal para un celíaco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No automáticamente. Lo que define si un pan es seguro para celíaco es la certificación libre de gluten y la trazabilidad de la elaboración, no que sea industrial o artesanal. Un pan industrial elaborado en planta dedicada 100% sin gluten puede ser más seguro que un pan artesanal hecho en panadería mixta donde se procesa trigo. Lo que sí difiere es el perfil nutricional: el industrial suele tener más aditivos, más grasas añadidas y carbohidratos refinados, mientras que el artesanal con masa madre y harinas integrales tiende a un perfil más limpio y digerible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es la HPMC en el pan sin gluten industrial y es segura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La HPMC (hidroxipropilmetilcelulosa, E-464) es el sustituto del gluten más utilizado en panificación sin gluten industrial. Cumple la función estructural que cumplía el gluten: retiene gas, da elasticidad y miga. La EFSA la considera segura en las cantidades usadas en alimentos; no se digiere ni se absorbe en el intestino humano, se elimina por las heces. No es tóxica ni cancerígena. La crítica honesta es que reemplaza la fermentación verdadera con química industrial — no es un riesgo de seguridad, es una decisión de calidad y digestibilidad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué el pan sin gluten tiene índice glucémico alto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque está formulado sobre almidones refinados (arroz, maíz, tapioca) que son pobres en fibra y se digieren muy rápido. Estudios sobre productos típicos miden un índice glucémico de alrededor de 75 (rango alto, típicamente 70-80). Esto importa especialmente para celíacos con diabetes, prediabetes o resistencia a la insulina. La fermentación con masa madre, la incorporación de harinas integrales (sorgo, trigo sarraceno, mijo) y semillas con fibra (chía, lino, psyllium) pueden bajar el IG hasta valores medios, pero no esperes que un pan sin gluten estándar tenga el comportamiento glucémico de un pan integral de trigo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué aporta la masa madre a un pan sin gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La fermentación con masa madre (bacterias acidolácticas y levaduras silvestres) hidroliza los fitatos de las harinas, lo que aumenta la biodisponibilidad de hierro, zinc, magnesio y vitaminas del grupo B. Además genera exopolisacáridos que actúan como prebióticos para la microbiota intestinal, mejora el perfil aromático, la textura y la digestibilidad. Como bonus práctico, la acidificación natural retrasa el desarrollo de mohos y prolonga la vida útil del pan sin necesidad de conservantes químicos. El efecto sobre el índice glucémico es positivo pero menor que en panes con gluten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo sé si un pan sin gluten es realmente seguro para celíaco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buscá tres señales concretas: primero, el logo oficial sin gluten (en Argentina rige el logo nuevo desde el 1 de diciembre de 2023; el estándar internacional Codex permite hasta 20 ppm de gluten residual y Argentina exige ≤10 ppm). Segundo, elaboración en cocina dedicada 100% sin gluten — sin convivencia con trigo en el mismo espacio. Tercero, mención del método de análisis: el oficial validado es el ELISA R5 Méndez. Un pan sin estas señales, aunque diga sin gluten en el frente, no ofrece garantía suficiente para un celíaco diagnosticado."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -68,6 +151,7 @@ h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
 .btn-gold:hover { box-shadow: 0 10px 36px rgba(212, 175, 55, 0.45); transform: translateY(-2px); }
 details summary { cursor: pointer; user-select: none; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -76,11 +160,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -261,7 +345,7 @@ details summary { cursor: pointer; user-select: none; }
 
 <p>Si ordenar el pan de la semana sumado a planificar almuerzos sin gluten, evitar contaminación cruzada y leer cada etiqueta te está consumiendo más tiempo del que querés invertir, hay una salida. En <strong>Caprichos de Lili</strong> producimos comida sin gluten en una cocina <strong>100% libre de TACC</strong> — sin convivencia con trigo en el mismo espacio — siguiendo protocolos de trazabilidad y elaboración pensados específicamente para celíaco diagnosticado.</p>
 
-<p>El <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Pack Semanal</a> entrega 7 almuerzos completos sin gluten, listos para calentar y servir, con delivery en Gran Asunción. Es la opción para las familias que prefieren <strong>recuperar tiempo y certezas</strong> en lugar de transformar la cocina en una negociación constante con el riesgo. Vos seguís decidiendo qué pan querés en la mesa; nosotros nos ocupamos del resto del menú.</p>
+<p>El <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Menú</a> entrega 7 almuerzos completos sin gluten, listos para calentar y servir, con delivery en Gran Asunción. Es la opción para las familias que prefieren <strong>recuperar tiempo y certezas</strong> en lugar de transformar la cocina en una negociación constante con el riesgo. Vos seguís decidiendo qué pan querés en la mesa; nosotros nos ocupamos del resto del menú.</p>
 
 <p class="text-sm text-gray-500 mt-8 pt-6 border-t border-gray-200">
 <em>Nota: este artículo es informativo. Para decisiones específicas sobre tu condición o la de tu hijo, consultá con tu gastroenterólogo o pediatra de confianza. Los datos regulatorios mencionados corresponden a las fechas indicadas y pueden actualizarse con resoluciones posteriores.</em>
@@ -312,8 +396,8 @@ details summary { cursor: pointer; user-select: none; }
 
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">¿Querés pan sin gluten sin preocuparte por la etiqueta?</h2>
-  <p class="text-lg text-gray-700 mb-6">Nuestro Pack Semanal entrega 7 almuerzos completos sin TACC, listos para calentar. Cocina 100% libre de gluten — sin contaminación cruzada, sin lista interminable de aditivos, sin pensar.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <p class="text-lg text-gray-700 mb-6">Nuestro menú congelado al vacío incluye pan, milanesas, Pizzeta XL, lasaña y ñoquis sin TACC, listos para calentar. Cocina 100% libre de gluten — sin contaminación cruzada, sin lista interminable de aditivos, sin pensar.</p>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -325,6 +409,15 @@ details summary { cursor: pointer; user-select: none; }
     <li><a href="/blog/productos-sin-gluten-supermercado-asuncion/" class="text-yellow-700 hover:underline">Productos sin gluten en supermercados de Asunción: qué buscar</a></li>
     <li><a href="/blog/alimentos-con-gluten-oculto/" class="text-yellow-700 hover:underline">Alimentos con gluten oculto que pasan desapercibidos</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -346,7 +439,7 @@ details summary { cursor: pointer; user-select: none; }
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
       </ul>
@@ -355,6 +448,8 @@ details summary { cursor: pointer; user-select: none; }
   <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
     © 2026 Caprichos de Lili · Todos los derechos reservados
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 
 </body>

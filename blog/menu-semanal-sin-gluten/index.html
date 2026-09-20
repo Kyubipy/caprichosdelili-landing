@@ -34,22 +34,131 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
 <style>body { background: #faf6ee; }</style>
 <script type="application/ld+json">
-{ "@context": "https://schema.org", "@graph": [
-  { "@type": "BreadcrumbList", "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-    { "@type": "ListItem", "position": 3, "name": "Menú semanal sin gluten", "item": "https://caprichosdelili.com/blog/menu-semanal-sin-gluten/" }
-  ]},
-  { "@type": "HowTo", "name": "Cómo armar un menú semanal sin gluten", "description": "Guía paso a paso para planificar 7 días de comidas sin TACC", "datePublished": "2026-05-05", "dateModified": "2026-05-05", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja" }, "step": [
-    { "@type": "HowToStep", "position": 1, "name": "Inventariar la heladera y despensa", "text": "Revisá qué ingredientes sin gluten ya tenés antes de planificar." },
-    { "@type": "HowToStep", "position": 2, "name": "Definir desayunos repetibles", "text": "Elegí 2-3 desayunos seguros para rotar toda la semana." },
-    { "@type": "HowToStep", "position": 3, "name": "Plan de 7 almuerzos y cenas", "text": "Mezclá proteínas, carbohidratos sin gluten y vegetales." },
-    { "@type": "HowToStep", "position": 4, "name": "Lista de compras", "text": "Armá la lista una vez por semana." },
-    { "@type": "HowToStep", "position": 5, "name": "Cocción en lote (batch cooking)", "text": "Cociná domingo o un día libre para tener todo listo." }
-  ]}
-,{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta un menú semanal sin gluten para una familia?", "acceptedAnswer": {"@type": "Answer", "text": "El costo varía según composición. Un menú semanal casero con ingredientes básicos sin TACC ronda los Gs 250.000-400.000 por familia de 4 personas. El Pack Semanal de Caprichos de Lili (comida lista, congelada al vacío, 7 días de almuerzos) cuesta Gs 350.000 para 4 personas, sin tener que cocinar."}}, {"@type": "Question", "name": "¿Cómo planifico un menú semanal celíaco sin aburrirme?", "acceptedAnswer": {"@type": "Answer", "text": "Rotá 3 tipos de proteína por semana (carne, pollo, pescado), 2 fuentes de carbohidrato sin TACC (arroz, papa, mandioca, polenta), y al menos 5 vegetales distintos. Reglas: nunca repetir el mismo plato en una semana, planificar domingo para 7 días, congelar porciones individuales para emergencias."}}, {"@type": "Question", "name": "¿Puedo congelar todo el menú semanal de una vez?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, es la estrategia más eficiente para celíacos. Cociná domingo, dividí en porciones individuales en recipientes herméticos o bolsas al vacío, congelá. Dura 2-3 meses. Descongelar la noche anterior en heladera, calentar en sartén o horno (no microondas para mantener textura)."}}, {"@type": "Question", "name": "¿Qué pasa si en mi menú semanal solo hay un celíaco y el resto de la familia no?", "acceptedAnswer": {"@type": "Answer", "text": "La cocina debe operar como 100% sin TACC para todos. Cocinar para todos sin gluten elimina riesgo de contaminación cruzada y es nutricionalmente equivalente. Los costos extra de ingredientes sin TACC se compensan con la reducción de gastos médicos por reintroducciones accidentales."}}, {"@type": "Question", "name": "¿Caprichos de Lili tiene un menú semanal sin gluten para Asunción?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El Pack Semanal entrega 7 almuerzos completos sin TACC, congelados al vacío, listos para calentar y servir. Delivery en Gran Asunción con 3 días de anticipación al pedido. Ideal para familias con celíacos diagnosticados que quieren comer rico sin pasar 3 horas en la cocina."}}]}
-  ]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Menú semanal sin gluten",
+          "item": "https://caprichosdelili.com/blog/menu-semanal-sin-gluten/"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "Cómo armar un menú semanal sin gluten",
+      "description": "Guía paso a paso para planificar 7 días de comidas sin TACC",
+      "datePublished": "2026-05-05",
+      "dateModified": "2026-05-05",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Inventariar la heladera y despensa",
+          "text": "Revisá qué ingredientes sin gluten ya tenés antes de planificar."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Definir desayunos repetibles",
+          "text": "Elegí 2-3 desayunos seguros para rotar toda la semana."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Plan de 7 almuerzos y cenas",
+          "text": "Mezclá proteínas, carbohidratos sin gluten y vegetales."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Lista de compras",
+          "text": "Armá la lista una vez por semana."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Cocción en lote (batch cooking)",
+          "text": "Cociná domingo o un día libre para tener todo listo."
+        }
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/menu-semanal-sin-gluten/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta un menú semanal sin gluten para una familia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El costo varía según la composición del menú y cuánto cocines vos. En Caprichos de Lili armás tu pedido plato por plato desde el menú publicado (pan, milanesas, Pizzeta XL, lasaña, ñoquis y salsas), congelado al vacío y con 3 días de anticipación, así pagás solo lo que vas a comer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo planifico un menú semanal celíaco sin aburrirme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rotá 3 tipos de proteína por semana (carne, pollo, pescado), 2 fuentes de carbohidrato sin TACC (arroz, papa, mandioca, polenta), y al menos 5 vegetales distintos. Reglas: nunca repetir el mismo plato en una semana, planificar domingo para 7 días, congelar porciones individuales para emergencias."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo congelar todo el menú semanal de una vez?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, es la estrategia más eficiente para celíacos. Cociná domingo, dividí en porciones individuales en recipientes herméticos o bolsas al vacío, congelá. Dura 2-3 meses. Descongelar la noche anterior en heladera, calentar en sartén o horno (no microondas para mantener textura)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si en mi menú semanal solo hay un celíaco y el resto de la familia no?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La cocina debe operar como 100% sin TACC para todos. Cocinar para todos sin gluten elimina riesgo de contaminación cruzada y es nutricionalmente equivalente. Los costos extra de ingredientes sin TACC se compensan con la reducción de gastos médicos por reintroducciones accidentales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Caprichos de Lili tiene un menú semanal sin gluten para Asunción?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Desde nuestro menú armás la semana con pan, milanesas, Pizzeta XL, lasaña, ñoquis y salsas sin TACC, congelados al vacío y listos para calentar. Delivery en Asunción y Gran Asunción con 3 días de anticipación. Ideal para familias con celíacos diagnosticados que quieren comer rico sin pasar horas en la cocina."
+          }
+        }
+      ]
+    }
+  ]
+}
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="text-stone-900 font-sans">
 <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-lg border-b border-cream-200">
@@ -154,7 +263,7 @@
         <span class="text-yellow-600 flex-shrink-0 group-open:rotate-180 transition-transform">▼</span>
         <span>¿Cuánto cuesta un menú semanal sin gluten para una familia?</span>
       </summary>
-      <div class="px-5 pb-5 pt-1 text-gray-700 leading-relaxed">El costo varía según composición. Un menú semanal casero con ingredientes básicos sin TACC ronda los Gs 250.000-400.000 por familia de 4 personas. El Pack Semanal de Caprichos de Lili (comida lista, congelada al vacío, 7 días de almuerzos) cuesta Gs 350.000 para 4 personas, sin tener que cocinar.</div>
+      <div class="px-5 pb-5 pt-1 text-gray-700 leading-relaxed">El costo varía según la composición del menú y cuánto cocines vos. En Caprichos de Lili armás tu pedido plato por plato desde el menú publicado (pan, milanesas, Pizzeta XL, lasaña, ñoquis y salsas), congelado al vacío y con 3 días de anticipación, así pagás solo lo que vas a comer.</div>
     </details>
     <details class="group bg-yellow-50/40 rounded-xl border border-yellow-200 overflow-hidden">
       <summary class="cursor-pointer px-5 py-4 font-semibold text-gray-900 hover:bg-yellow-100/50 transition flex items-start gap-3">
@@ -182,9 +291,18 @@
         <span class="text-yellow-600 flex-shrink-0 group-open:rotate-180 transition-transform">▼</span>
         <span>¿Caprichos de Lili tiene un menú semanal sin gluten para Asunción?</span>
       </summary>
-      <div class="px-5 pb-5 pt-1 text-gray-700 leading-relaxed">Sí. El Pack Semanal entrega 7 almuerzos completos sin TACC, congelados al vacío, listos para calentar y servir. Delivery en Gran Asunción con 3 días de anticipación al pedido. Ideal para familias con celíacos diagnosticados que quieren comer rico sin pasar 3 horas en la cocina.</div>
+      <div class="px-5 pb-5 pt-1 text-gray-700 leading-relaxed">Sí. Desde nuestro menú armás la semana con pan, milanesas, Pizzeta XL, lasaña, ñoquis y salsas sin TACC, congelados al vacío y listos para calentar. Delivery en Asunción y Gran Asunción con 3 días de anticipación. Ideal para familias con celíacos diagnosticados que quieren comer rico sin pasar horas en la cocina.</div>
     </details>
   </div>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -193,6 +311,8 @@
     <p class="font-display text-xl text-white">Caprichos de Lili</p>
     <p class="mt-2">Cocina sin gluten artesanal en Asunción · WhatsApp <a href="https://wa.me/595985381866" class="hover:text-brand-400">0985 381866</a></p>
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 </body>
 </html>

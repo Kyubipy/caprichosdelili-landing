@@ -37,16 +37,98 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Alimentos con gluten oculto", "item": "https://caprichosdelili.com/blog/alimentos-con-gluten-oculto/" }
-    ]},
-    { "@type": "Article", "headline": "10 Alimentos con Gluten Oculto", "datePublished": "2026-05-05", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili" } }
-  ,{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿En qué alimentos hay gluten oculto que un celíaco no sospecha?", "acceptedAnswer": {"@type": "Answer", "text": "Salsa de soja común (la mayoría tiene trigo), cubitos de caldo Maggi/Knorr, mayonesas comerciales (algunas usan almidón modificado de trigo), embutidos con almidones, golosinas con harina de trigo como espesante, helados con galletitas trituradas, salsa BBQ, vinagres de malta y cervezas comunes."}}, {"@type": "Question", "name": "¿Cómo identifico gluten en una etiqueta?", "acceptedAnswer": {"@type": "Answer", "text": "Buscá la frase 'contiene trigo/cebada/centeno/avena' en advertencias. Términos sospechosos en ingredientes: harina, almidón modificado (si no especifica origen), proteína vegetal hidrolizada, malta, extracto de levadura, jarabe de glucosa de trigo. La leyenda 'sin TACC' o 'sin gluten' certificada es la única garantía."}}, {"@type": "Question", "name": "¿Los medicamentos pueden tener gluten?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Algunas pastillas usan almidón de trigo como excipiente. Para celíacos diagnosticados es crítico verificar con el laboratorio fabricante o pedir versión 'sin gluten' o 'sin almidón de trigo'. Suplementos y vitaminas tienen el mismo riesgo. La aspirina, paracetamol e ibuprofeno suelen ser seguros, pero cada marca varía."}}, {"@type": "Question", "name": "¿Los cosméticos y productos de higiene contienen gluten?", "acceptedAnswer": {"@type": "Answer", "text": "La piel intacta no absorbe gluten significativamente. La excepción real son las pastas dentales y enjuagues bucales que se ingieren residualmente. Lápiz labial, bálsamo y cremas alrededor de la boca también requieren atención. Champús y jabones corporales no son riesgo real para celíacos."}}, {"@type": "Question", "name": "¿Puedo confiar en los productos 'sin trigo' como sin gluten?", "acceptedAnswer": {"@type": "Answer", "text": "No necesariamente. 'Sin trigo' significa que no tiene trigo, pero puede contener cebada, centeno o avena contaminada. La certificación correcta para celíacos es 'sin gluten' o 'sin TACC' (la T es trigo, A avena, C cebada, C centeno). Verificá siempre la leyenda completa, no solo 'sin trigo'."}}]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Alimentos con gluten oculto",
+          "item": "https://caprichosdelili.com/blog/alimentos-con-gluten-oculto/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "10 Alimentos con Gluten Oculto",
+      "datePublished": "2026-05-05",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/alimentos-con-gluten-oculto/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿En qué alimentos hay gluten oculto que un celíaco no sospecha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Salsa de soja común (la mayoría tiene trigo), cubitos de caldo Maggi/Knorr, mayonesas comerciales (algunas usan almidón modificado de trigo), embutidos con almidones, golosinas con harina de trigo como espesante, helados con galletitas trituradas, salsa BBQ, vinagres de malta y cervezas comunes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo identifico gluten en una etiqueta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buscá la frase 'contiene trigo/cebada/centeno/avena' en advertencias. Términos sospechosos en ingredientes: harina, almidón modificado (si no especifica origen), proteína vegetal hidrolizada, malta, extracto de levadura, jarabe de glucosa de trigo. La leyenda 'sin TACC' o 'sin gluten' certificada es la única garantía."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Los medicamentos pueden tener gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Algunas pastillas usan almidón de trigo como excipiente. Para celíacos diagnosticados es crítico verificar con el laboratorio fabricante o pedir versión 'sin gluten' o 'sin almidón de trigo'. Suplementos y vitaminas tienen el mismo riesgo. La aspirina, paracetamol e ibuprofeno suelen ser seguros, pero cada marca varía."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Los cosméticos y productos de higiene contienen gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La piel intacta no absorbe gluten significativamente. La excepción real son las pastas dentales y enjuagues bucales que se ingieren residualmente. Lápiz labial, bálsamo y cremas alrededor de la boca también requieren atención. Champús y jabones corporales no son riesgo real para celíacos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo confiar en los productos 'sin trigo' como sin gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No necesariamente. 'Sin trigo' significa que no tiene trigo, pero puede contener cebada, centeno o avena contaminada. La certificación correcta para celíacos es 'sin gluten' o 'sin TACC' (la T es trigo, A avena, C cebada, C centeno). Verificá siempre la leyenda completa, no solo 'sin trigo'."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="text-stone-900 font-sans">
 <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-lg border-b border-cream-200">
@@ -177,12 +259,23 @@
   </div>
 </section>
 
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
+</section>
+
 </article>
 <footer class="bg-stone-900 text-stone-400 py-12 text-sm mt-16">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <p class="font-display text-xl text-white">Caprichos de Lili</p>
     <p class="mt-2">Cocina sin gluten artesanal en Asunción · WhatsApp <a href="https://wa.me/595985381866" class="hover:text-brand-400">0985 381866</a></p>
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 </body>
 </html>

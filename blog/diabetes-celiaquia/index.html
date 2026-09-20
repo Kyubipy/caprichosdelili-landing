@@ -38,20 +38,90 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Diabetes y celiaquía", "item": "https://caprichosdelili.com/blog/diabetes-celiaquia/" }
-    ]},
-    { "@type": "MedicalWebPage", "name": "Diabetes y Celiaquía", "image": "https://caprichosdelili.com/assets/img/blog/diabetes-celiaquia.webp", "datePublished": "2026-05-07", "dateModified": "2026-06-12", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/og-caprichos-2026.jpg" } }, "mainEntityOfPage": "https://caprichosdelili.com/blog/diabetes-celiaquia/", "inLanguage": "es-PY", "about": { "@type": "MedicalCondition", "name": "Diabetes y Celiaquía concomitantes" } },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿La diabetes y la celiaquía están relacionadas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, especialmente la diabetes tipo 1. Ambas son enfermedades autoinmunes y comparten genes de susceptibilidad. Hasta el 10% de los diabéticos tipo 1 también tienen celiaquía." } },
-      { "@type": "Question", "name": "¿Las harinas sin gluten suben más el azúcar?", "acceptedAnswer": { "@type": "Answer", "text": "Algunas sí. La harina de arroz, almidón de mandioca y maicena tienen alto índice glucémico. Es preferible elegir harina de garbanzo, almendra, lino, coco o quinoa, que tienen menor impacto glucémico." } },
-      { "@type": "Question", "name": "¿Puedo comer pan sin gluten siendo diabético?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, eligiendo panes sin gluten con harinas integrales y fibra (sarraceno, almendra, linaza). Mejor combinarlos con proteínas y grasas para reducir el pico glucémico." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Diabetes y celiaquía",
+          "item": "https://caprichosdelili.com/blog/diabetes-celiaquia/"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "name": "Diabetes y Celiaquía",
+      "image": "https://caprichosdelili.com/assets/img/blog/diabetes-celiaquia.webp",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-06-12",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/og-caprichos-2026.jpg"
+        }
+      },
+      "mainEntityOfPage": "https://caprichosdelili.com/blog/diabetes-celiaquia/",
+      "inLanguage": "es-PY",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Diabetes y Celiaquía concomitantes"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿La diabetes y la celiaquía están relacionadas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, especialmente la diabetes tipo 1. Ambas son enfermedades autoinmunes y comparten genes de susceptibilidad. Hasta el 10% de los diabéticos tipo 1 también tienen celiaquía."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Las harinas sin gluten suben más el azúcar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Algunas sí. La harina de arroz, almidón de mandioca y maicena tienen alto índice glucémico. Es preferible elegir harina de garbanzo, almendra, lino, coco o quinoa, que tienen menor impacto glucémico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo comer pan sin gluten siendo diabético?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, eligiendo panes sin gluten con harinas integrales y fibra (sarraceno, almendra, linaza). Mejor combinarlos con proteínas y grasas para reducir el pico glucémico."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="text-stone-900 font-sans">
 
@@ -227,6 +297,15 @@
   </div>
 </section>
 
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
+</section>
+
 </article>
 
 <footer class="bg-stone-900 text-stone-400 py-12 text-sm mt-16">
@@ -235,6 +314,8 @@
     <p class="mt-2">Cocina sin gluten artesanal en Asunción · WhatsApp <a href="https://wa.me/595985381866" class="hover:text-brand-400">0985 381866</a></p>
     <p class="mt-4 text-xs">⚠️ Este artículo es informativo. No reemplaza la consulta con tu endocrinólogo y nutricionista.</p>
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 </body>
 </html>

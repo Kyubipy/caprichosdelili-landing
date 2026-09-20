@@ -33,19 +33,102 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Tereré, mate y cocido sin gluten", "item": "https://caprichosdelili.com/blog/terere-mate-cocido-sin-gluten/" }
-    ]},
-    { "@type": "Article", "headline": "Tereré, mate y cocido: qué puede tomar un celíaco", "image": "https://caprichosdelili.com/assets/img/blog/terere-mate-cocido-sin-gluten.webp", "datePublished": "2026-08-26", "dateModified": "2026-08-26", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "Guía sobre tereré, mate y cocido para celíacos: por qué la yerba mate en sí no tiene gluten, dónde está el riesgo real (yerba saborizada, cocido de trigo, contaminación cruzada) y cómo tomarlos con tranquilidad." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿La yerba mate tiene gluten?", "acceptedAnswer": { "@type": "Answer", "text": "No. La yerba mate se hace de las hojas de Ilex paraguariensis, una planta, y no contiene gluten de forma natural. El riesgo no está en la yerba en sí sino en cómo se procesa y empaqueta: si la planta comparte líneas de producción con productos que sí llevan trigo, avena, cebada o centeno, puede haber contaminación cruzada. Por eso, ante la duda, conviene elegir yerba simple (sin aditivos) y, si es posible, con certificación libre de gluten en el envase." } },
-      { "@type": "Question", "name": "¿El tereré con yuyos o hierbas es seguro para celíacos?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, en general. Las hierbas frescas que se agregan al tereré (cedrón, menta, boldo, poleo, burrito y similares) son plantas y no contienen gluten de forma natural, igual que la yerba. El único cuidado real es de manipulación: si compraste el yuyo suelto en un puesto que también vende o manipula harina de trigo con las mismas manos o superficies, existe un riesgo de contaminación cruzada, igual que con cualquier alimento suelto. No es un riesgo propio de la hierba, sino de dónde y cómo se maneja." } },
-      { "@type": "Question", "name": "¿Qué es el 'cocido de trigo' o 'café de cebada' y por qué no es lo mismo que el cocido de yerba?", "acceptedAnswer": { "@type": "Answer", "text": "El cocido tradicional paraguayo se hace tostando yerba mate (a veces con azúcar quemada) y es naturalmente libre de gluten, igual que la yerba. Pero existe otra bebida distinta, hecha de granos de trigo o cebada tostados y molidos, que se vende como sucedáneo de café (conocida como 'café de cebada', 'café de trigo' o 'malta' según la región). Esa bebida sí contiene gluten porque está hecha de cereales que lo llevan. Son dos productos diferentes que a veces se confunden por el nombre parecido — conviene revisar el ingrediente principal en el envase antes de tomarla." } },
-      { "@type": "Question", "name": "¿La yerba mate saborizada o 'compuesta' es apta para celíacos?", "acceptedAnswer": { "@type": "Answer", "text": "Depende del producto, y por eso hay que leer la etiqueta. La yerba saborizada agrega aceites esenciales, frutas deshidratadas o esencias a la yerba base, y la mayoría de esos agregados no tienen gluten. El punto de atención es cualquier aditivo declarado como 'extracto de malta', 'malta de cebada' o similar, que se usa como saborizante en algunos productos alimenticios y que si proviene de cebada sí contiene gluten. Si el envase no lista los ingredientes con claridad, la opción más segura es una yerba simple sin aditivos o una con certificación libre de gluten." } },
-      { "@type": "Question", "name": "¿Compartir la guampa, la bombilla o el termo tiene riesgo para un celíaco?", "acceptedAnswer": { "@type": "Answer", "text": "No, siempre que lo que se tome adentro no tenga gluten. El riesgo de un celíaco no viene del recipiente sino de los ingredientes: la guampa, la bombilla y el termo no aportan gluten por sí mismos. La única situación de cuidado sería si esos mismos utensilios se usaran para preparar o mezclar algo con harina de trigo u otro cereal con gluten sin lavarlos bien entre un uso y otro, algo poco habitual con el equipo de tereré o mate." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tereré, mate y cocido sin gluten",
+          "item": "https://caprichosdelili.com/blog/terere-mate-cocido-sin-gluten/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Tereré, mate y cocido: qué puede tomar un celíaco",
+      "image": "https://caprichosdelili.com/assets/img/blog/terere-mate-cocido-sin-gluten.webp",
+      "datePublished": "2026-08-26",
+      "dateModified": "2026-08-26",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "Guía sobre tereré, mate y cocido para celíacos: por qué la yerba mate en sí no tiene gluten, dónde está el riesgo real (yerba saborizada, cocido de trigo, contaminación cruzada) y cómo tomarlos con tranquilidad.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/terere-mate-cocido-sin-gluten/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿La yerba mate tiene gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La yerba mate se hace de las hojas de Ilex paraguariensis, una planta, y no contiene gluten de forma natural. El riesgo no está en la yerba en sí sino en cómo se procesa y empaqueta: si la planta comparte líneas de producción con productos que sí llevan trigo, avena, cebada o centeno, puede haber contaminación cruzada. Por eso, ante la duda, conviene elegir yerba simple (sin aditivos) y, si es posible, con certificación libre de gluten en el envase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El tereré con yuyos o hierbas es seguro para celíacos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, en general. Las hierbas frescas que se agregan al tereré (cedrón, menta, boldo, poleo, burrito y similares) son plantas y no contienen gluten de forma natural, igual que la yerba. El único cuidado real es de manipulación: si compraste el yuyo suelto en un puesto que también vende o manipula harina de trigo con las mismas manos o superficies, existe un riesgo de contaminación cruzada, igual que con cualquier alimento suelto. No es un riesgo propio de la hierba, sino de dónde y cómo se maneja."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es el 'cocido de trigo' o 'café de cebada' y por qué no es lo mismo que el cocido de yerba?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El cocido tradicional paraguayo se hace tostando yerba mate (a veces con azúcar quemada) y es naturalmente libre de gluten, igual que la yerba. Pero existe otra bebida distinta, hecha de granos de trigo o cebada tostados y molidos, que se vende como sucedáneo de café (conocida como 'café de cebada', 'café de trigo' o 'malta' según la región). Esa bebida sí contiene gluten porque está hecha de cereales que lo llevan. Son dos productos diferentes que a veces se confunden por el nombre parecido — conviene revisar el ingrediente principal en el envase antes de tomarla."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La yerba mate saborizada o 'compuesta' es apta para celíacos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende del producto, y por eso hay que leer la etiqueta. La yerba saborizada agrega aceites esenciales, frutas deshidratadas o esencias a la yerba base, y la mayoría de esos agregados no tienen gluten. El punto de atención es cualquier aditivo declarado como 'extracto de malta', 'malta de cebada' o similar, que se usa como saborizante en algunos productos alimenticios y que si proviene de cebada sí contiene gluten. Si el envase no lista los ingredientes con claridad, la opción más segura es una yerba simple sin aditivos o una con certificación libre de gluten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Compartir la guampa, la bombilla o el termo tiene riesgo para un celíaco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, siempre que lo que se tome adentro no tenga gluten. El riesgo de un celíaco no viene del recipiente sino de los ingredientes: la guampa, la bombilla y el termo no aportan gluten por sí mismos. La única situación de cuidado sería si esos mismos utensilios se usaran para preparar o mezclar algo con harina de trigo u otro cereal con gluten sin lavarlos bien entre un uso y otro, algo poco habitual con el equipo de tereré o mate."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -68,6 +151,7 @@ h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
 .btn-gold:hover { box-shadow: 0 10px 36px rgba(212, 175, 55, 0.45); transform: translateY(-2px); }
 details summary { cursor: pointer; user-select: none; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -76,11 +160,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -247,8 +331,8 @@ details summary { cursor: pointer; user-select: none; }
 
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Tereré aparte, la comida sin gluten también puede ser fácil</h2>
-  <p class="text-lg text-gray-700 mb-6">Mientras vos te encargás de la ronda de tereré, nosotros nos encargamos de la comida: Pack Semanal con pan, milanesas, Pizzeta XL y más, elaborado en cocina 100% libre de gluten y congelado al vacío.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <p class="text-lg text-gray-700 mb-6">Mientras vos te encargás de la ronda de tereré, nosotros nos encargamos de la comida: nuestro menú con pan, milanesas, Pizzeta XL y más, elaborado en cocina 100% libre de gluten y congelado al vacío.</p>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -260,6 +344,15 @@ details summary { cursor: pointer; user-select: none; }
     <li><a href="/blog/errores-recien-diagnosticado-celiaco/" class="text-yellow-700 hover:underline">7 errores del recién diagnosticado celíaco</a></li>
     <li><a href="/blog/harinas-sin-gluten-guia-completa/" class="text-yellow-700 hover:underline">Harinas sin gluten: guía completa para saber cuál usar</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -281,7 +374,7 @@ details summary { cursor: pointer; user-select: none; }
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
         <li><a href="/politica-privacidad/" class="hover:text-yellow-700">Privacidad</a></li>

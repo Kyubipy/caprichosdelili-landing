@@ -33,19 +33,102 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "5 errores comunes al cocinar sin gluten en casa", "item": "https://caprichosdelili.com/blog/errores-cocinar-sin-gluten/" }
-    ]},
-    { "@type": "Article", "headline": "5 errores comunes al cocinar sin gluten en casa (y cómo evitarlos)", "image": "https://caprichosdelili.com/assets/img/blog/errores-cocinar-sin-gluten.webp", "datePublished": "2026-06-16", "dateModified": "2026-06-16", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "Los 5 errores más frecuentes que cometen familias con celíaco recién diagnosticado al cocinar en casa." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿La harina de trigo común puede flotar en el aire y contaminar mi cocina?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La harina de trigo en estado de polvo queda suspendida en el aire varias horas después de usarla y se deposita en superficies, utensilios y alimentos cercanos. Para un celíaco diagnosticado esto es exposición real. Si en tu cocina convive harina de trigo, evitá manipularla cerca del momento en que vas a cocinar la comida del celíaco — separá por horas y limpiá con paño húmedo antes." } },
-      { "@type": "Question", "name": "¿Puedo usar el mismo aceite para freír cosas con y sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "No. El gluten queda en el aceite después de freír alimentos con trigo (milanesas empanizadas, papas con harina, empanadas) y contamina todo lo que se fríe después. Solución: aceite separado y exclusivo para celíaco, en botella marcada y olla dedicada que no se mezcla con la cocina general." } },
-      { "@type": "Question", "name": "¿Las premezclas sin gluten industriales rinden igual que la harina de trigo?", "acceptedAnswer": { "@type": "Answer", "text": "No automáticamente. Las premezclas sin gluten necesitan más líquido, más huevos como aglutinante, y suelen requerir reposo antes de cocinar. Las recetas de tu abuela en harina de trigo no funcionan reemplazando 1:1 — necesitan ajustes. Mejor seguir recetas escritas específicamente para sin gluten que adaptar las de toda la vida." } },
-      { "@type": "Question", "name": "¿Necesito comprar utensilios nuevos al diagnosticarme celíaco?", "acceptedAnswer": { "@type": "Answer", "text": "Los porosos sí: tabla de madera, colador, espátulas de madera, esponjas, tostadora y procesadora con resquicios. Esos absorben gluten que no sale con lavado normal. Los lisos (sartenes inox, ollas, cuchillos metálicos) se pueden compartir si se lavan a fondo. Si la cocina es mixta, la solución más segura es designar utensilios marcados visualmente como exclusivos sin TACC." } },
-      { "@type": "Question", "name": "¿Cocinar sin gluten en casa cuesta el doble que cocinar con gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Los ingredientes sí cuestan más (harinas sin TACC son entre 2x y 4x el precio de la harina de trigo común). Pero el costo total de la dieta no necesariamente se duplica: las recetas tradicionales paraguayas como chipa, mbeju, sopa paraguaya, vorí vorí ya son naturalmente sin TACC y baratas. Si planificás el menú alrededor de esos platos en lugar de imitar pan y pastas con premezclas caras, el costo es razonable." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "5 errores comunes al cocinar sin gluten en casa",
+          "item": "https://caprichosdelili.com/blog/errores-cocinar-sin-gluten/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "5 errores comunes al cocinar sin gluten en casa (y cómo evitarlos)",
+      "image": "https://caprichosdelili.com/assets/img/blog/errores-cocinar-sin-gluten.webp",
+      "datePublished": "2026-06-16",
+      "dateModified": "2026-06-16",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "Los 5 errores más frecuentes que cometen familias con celíaco recién diagnosticado al cocinar en casa.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/errores-cocinar-sin-gluten/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿La harina de trigo común puede flotar en el aire y contaminar mi cocina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La harina de trigo en estado de polvo queda suspendida en el aire varias horas después de usarla y se deposita en superficies, utensilios y alimentos cercanos. Para un celíaco diagnosticado esto es exposición real. Si en tu cocina convive harina de trigo, evitá manipularla cerca del momento en que vas a cocinar la comida del celíaco — separá por horas y limpiá con paño húmedo antes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar el mismo aceite para freír cosas con y sin gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El gluten queda en el aceite después de freír alimentos con trigo (milanesas empanizadas, papas con harina, empanadas) y contamina todo lo que se fríe después. Solución: aceite separado y exclusivo para celíaco, en botella marcada y olla dedicada que no se mezcla con la cocina general."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Las premezclas sin gluten industriales rinden igual que la harina de trigo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No automáticamente. Las premezclas sin gluten necesitan más líquido, más huevos como aglutinante, y suelen requerir reposo antes de cocinar. Las recetas de tu abuela en harina de trigo no funcionan reemplazando 1:1 — necesitan ajustes. Mejor seguir recetas escritas específicamente para sin gluten que adaptar las de toda la vida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito comprar utensilios nuevos al diagnosticarme celíaco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los porosos sí: tabla de madera, colador, espátulas de madera, esponjas, tostadora y procesadora con resquicios. Esos absorben gluten que no sale con lavado normal. Los lisos (sartenes inox, ollas, cuchillos metálicos) se pueden compartir si se lavan a fondo. Si la cocina es mixta, la solución más segura es designar utensilios marcados visualmente como exclusivos sin TACC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cocinar sin gluten en casa cuesta el doble que cocinar con gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los ingredientes sí cuestan más (harinas sin TACC son entre 2x y 4x el precio de la harina de trigo común). Pero el costo total de la dieta no necesariamente se duplica: las recetas tradicionales paraguayas como chipa, mbeju, sopa paraguaya, vorí vorí ya son naturalmente sin TACC y baratas. Si planificás el menú alrededor de esos platos en lugar de imitar pan y pastas con premezclas caras, el costo es razonable."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -68,6 +151,7 @@ h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
 .btn-gold:hover { box-shadow: 0 10px 36px rgba(212, 175, 55, 0.45); transform: translateY(-2px); }
 details summary { cursor: pointer; user-select: none; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -76,11 +160,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -115,7 +199,7 @@ details summary { cursor: pointer; user-select: none; }
 
 <p>En los años que llevamos produciendo comida sin gluten certificada en Asunción y ayudando a familias recién diagnosticadas, hay un patrón claro: los errores que se cometen en la cocina casera <strong>no son por falta de información</strong> — hay miles de blogs y libros. Son por aplicar mal información que es contradictoria, o por suponer que "una migaja no pasa nada".</p>
 
-<p>Como médica pediatra neonatóloga y como celíaca diagnosticada hace años, te puedo decir que los siguientes 5 errores son los que veo en consulta una y otra vez. Si los corregís, vas a reducir significativamente las exposiciones accidentales al gluten y vas a hacer una cocina celíaca <strong>sostenible</strong> — no obsesiva, no agotadora.</p>
+<p>Como médica pediatra neonatóloga y como celíaca diagnosticada hace años, te puedo decir que los siguientes 5 errores son los que veo repetirse en familias celíacas una y otra vez. Si los corregís, vas a reducir significativamente las exposiciones accidentales al gluten y vas a hacer una cocina celíaca <strong>sostenible</strong> — no obsesiva, no agotadora.</p>
 
 <h2>Error 1: Pensar que "no usar harina de trigo" es suficiente</h2>
 
@@ -174,13 +258,13 @@ details summary { cursor: pointer; user-select: none; }
 
 <p>Te decimos algo honesto: hacer todo esto bien <strong>requiere tiempo y atención</strong> que muchas familias no tienen. Si trabajás 50+ horas a la semana, tenés hijos chicos, o simplemente querés disfrutar la cocina sin que sea una negociación constante con el riesgo, hay opciones.</p>
 
-<p>En Caprichos de Lili producimos comida sin gluten en una cocina <strong>100% libre de TACC</strong> — sin convivencia con trigo en el espacio. El <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Pack Semanal</a> entrega 7 almuerzos completos sin gluten, congelados al vacío, listos para calentar y servir, con delivery en Gran Asunción. Es la solución para las familias que prefieren <strong>concentrarse en el resto de la vida</strong> y no en convertir la cocina en un laboratorio.</p>
+<p>En Caprichos de Lili producimos comida sin gluten en una cocina <strong>100% libre de TACC</strong> — sin convivencia con trigo en el espacio. El <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Menú</a> entrega 7 almuerzos completos sin gluten, congelados al vacío, listos para calentar y servir, con delivery en Gran Asunción. Es la solución para las familias que prefieren <strong>concentrarse en el resto de la vida</strong> y no en convertir la cocina en un laboratorio.</p>
 
 <p>Esto no es "abandonar la cocina celíaca" — es ejecutar bien tu plan de alimentación con otras manos. El plan sigue siendo tuyo.</p>
 
 <h2>Cierre</h2>
 
-<p>Los 5 errores que te conté no son anécdotas. Son patrones que veo en consulta semana tras semana. Si los corregís de una vez, vas a notar la diferencia en cómo se siente tu cuerpo (menos exposiciones = menos síntomas inflamatorios) y en cómo se siente tu cabeza (menos ansiedad sobre lo que comés). La dieta sin gluten <strong>se puede hacer bien sin que te consuma la vida</strong> — solo hay que dejar de cometer los errores básicos y construir hábitos correctos desde el principio.</p>
+<p>Los 5 errores que te conté no son anécdotas. Son patrones que veo en familias celíacas semana tras semana. Si los corregís de una vez, vas a notar la diferencia en cómo se siente tu cuerpo (menos exposiciones = menos síntomas inflamatorios) y en cómo se siente tu cabeza (menos ansiedad sobre lo que comés). La dieta sin gluten <strong>se puede hacer bien sin que te consuma la vida</strong> — solo hay que dejar de cometer los errores básicos y construir hábitos correctos desde el principio.</p>
 
 <p class="text-sm text-gray-500 mt-8 pt-6 border-t border-gray-200">
 <em>Nota: este artículo es informativo. Para decisiones específicas sobre tu condición o la de tu hijo, consultá con tu gastroenterólogo o pediatra de confianza.</em>
@@ -231,8 +315,8 @@ details summary { cursor: pointer; user-select: none; }
 
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">¿Querés simplificar la cocina celíaca?</h2>
-  <p class="text-lg text-gray-700 mb-6">Nuestro Pack Semanal entrega 7 almuerzos completos sin TACC, listos para calentar. Cocina 100% libre de gluten — sin contaminación cruzada, sin esfuerzo, sin pensar.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <p class="text-lg text-gray-700 mb-6">Nuestro menú congelado al vacío incluye pan, milanesas, Pizzeta XL, lasaña y ñoquis sin TACC, listos para calentar. Cocina 100% libre de gluten — sin contaminación cruzada, sin esfuerzo, sin pensar.</p>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -244,6 +328,15 @@ details summary { cursor: pointer; user-select: none; }
     <li><a href="/blog/alimentos-con-gluten-oculto/" class="text-yellow-700 hover:underline">Alimentos con gluten oculto que pasan desapercibidos</a></li>
     <li><a href="/blog/errores-recien-diagnosticado-celiaco/" class="text-yellow-700 hover:underline">5 errores frecuentes del celíaco recién diagnosticado</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -265,7 +358,7 @@ details summary { cursor: pointer; user-select: none; }
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
       </ul>
@@ -274,6 +367,8 @@ details summary { cursor: pointer; user-select: none; }
   <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
     © 2026 Caprichos de Lili · Todos los derechos reservados
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 
 </body>

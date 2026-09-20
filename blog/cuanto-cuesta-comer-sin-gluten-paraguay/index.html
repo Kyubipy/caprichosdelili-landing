@@ -33,18 +33,94 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "¿Cuánto cuesta comer sin gluten en Paraguay?", "item": "https://caprichosdelili.com/blog/cuanto-cuesta-comer-sin-gluten-paraguay/" }
-    ]},
-    { "@type": "Article", "headline": "¿Cuánto cuesta comer sin gluten en Paraguay? La verdad incómoda", "image": "https://caprichosdelili.com/assets/img/blog/cuanto-cuesta-comer-sin-gluten-paraguay.webp", "datePublished": "2026-08-16", "dateModified": "2026-08-16", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "Análisis honesto del costo real de la dieta sin gluten en Paraguay: por qué los productos cuestan 30-80% más, por qué la calidad muchas veces no acompaña el precio, cómo distinguir un sobreprecio justificado de uno abusivo, y estrategias concretas para bajar la cuenta sin arriesgar la salud." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿Por qué los productos sin gluten son más caros?", "acceptedAnswer": { "@type": "Answer", "text": "Hay razones legítimas: las harinas sin gluten (arroz, sarraceno, almendras) cuestan más que la de trigo, se produce en lotes chicos, y evitar la contaminación cruzada exige una cocina o línea de producción dedicada — eso es infraestructura real que se paga. Pero también hay sobreprecio sin justificación: productos comunes que solo por llevar la etiqueta 'sin gluten' cobran precio premium sin que exista un proceso especial detrás. La clave es aprender a distinguir cuál es cuál." } },
-      { "@type": "Question", "name": "¿Es más barato cocinar sin gluten en casa?", "acceptedAnswer": { "@type": "Answer", "text": "Por porción, casi siempre sí — especialmente si armás tus propias mezclas de harinas en lugar de comprar premezclas listas, que es donde más se paga el sobreprecio. El costo real de cocinar en casa es el tiempo: aprender a mezclar harinas, probar recetas y equivocarse tiene su curva. Una estrategia intermedia es cocinar en tandas grandes y congelar, o combinar cocina casera con productos elaborados comprados directo al productor." } },
-      { "@type": "Question", "name": "¿Cómo sé si un producto sin gluten vale lo que cuesta?", "acceptedAnswer": { "@type": "Answer", "text": "Cinco preguntas rápidas: ¿se elabora en cocina 100% libre de gluten o en una línea compartida? ¿Quién lo cocina entiende de celiaquía o solo sigue una moda? ¿La lista de ingredientes muestra harinas reales o una premezcla genérica más aire? ¿La textura y el sabor sobreviven al día siguiente? ¿El precio es transparente y estable, o cambia según el cliente? Un producto que responde bien esas cinco preguntas justifica su precio. Uno que no, es etiqueta cara." } },
-      { "@type": "Question", "name": "¿El congelado al vacío baja la calidad de la comida sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "No — bien hecho, es lo contrario. El congelado al vacío permite producir en tandas eficientes (lo que baja el costo por porción), conserva la textura y el sabor sin conservantes, y elimina el desperdicio de la comida que no se vendió en el día, que es un costo que los locales trasladan al precio. Para el consumidor celíaco significa pagar por comida, no por vitrina: descongelás lo que vas a comer, cuando lo vas a comer." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "¿Cuánto cuesta comer sin gluten en Paraguay?",
+          "item": "https://caprichosdelili.com/blog/cuanto-cuesta-comer-sin-gluten-paraguay/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "¿Cuánto cuesta comer sin gluten en Paraguay? La verdad incómoda",
+      "image": "https://caprichosdelili.com/assets/img/blog/cuanto-cuesta-comer-sin-gluten-paraguay.webp",
+      "datePublished": "2026-08-16",
+      "dateModified": "2026-08-16",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "Análisis honesto del costo real de la dieta sin gluten en Paraguay: por qué los productos cuestan 30-80% más, por qué la calidad muchas veces no acompaña el precio, cómo distinguir un sobreprecio justificado de uno abusivo, y estrategias concretas para bajar la cuenta sin arriesgar la salud.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/cuanto-cuesta-comer-sin-gluten-paraguay/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Por qué los productos sin gluten son más caros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hay razones legítimas: las harinas sin gluten (arroz, sarraceno, almendras) cuestan más que la de trigo, se produce en lotes chicos, y evitar la contaminación cruzada exige una cocina o línea de producción dedicada — eso es infraestructura real que se paga. Pero también hay sobreprecio sin justificación: productos comunes que solo por llevar la etiqueta 'sin gluten' cobran precio premium sin que exista un proceso especial detrás. La clave es aprender a distinguir cuál es cuál."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es más barato cocinar sin gluten en casa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por porción, casi siempre sí — especialmente si armás tus propias mezclas de harinas en lugar de comprar premezclas listas, que es donde más se paga el sobreprecio. El costo real de cocinar en casa es el tiempo: aprender a mezclar harinas, probar recetas y equivocarse tiene su curva. Una estrategia intermedia es cocinar en tandas grandes y congelar, o combinar cocina casera con productos elaborados comprados directo al productor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo sé si un producto sin gluten vale lo que cuesta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cinco preguntas rápidas: ¿se elabora en cocina 100% libre de gluten o en una línea compartida? ¿Quién lo cocina entiende de celiaquía o solo sigue una moda? ¿La lista de ingredientes muestra harinas reales o una premezcla genérica más aire? ¿La textura y el sabor sobreviven al día siguiente? ¿El precio es transparente y estable, o cambia según el cliente? Un producto que responde bien esas cinco preguntas justifica su precio. Uno que no, es etiqueta cara."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El congelado al vacío baja la calidad de la comida sin gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — bien hecho, es lo contrario. El congelado al vacío permite producir en tandas eficientes (lo que baja el costo por porción), conserva la textura y el sabor sin conservantes, y elimina el desperdicio de la comida que no se vendió en el día, que es un costo que los locales trasladan al precio. Para el consumidor celíaco significa pagar por comida, no por vitrina: descongelás lo que vas a comer, cuando lo vas a comer."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -68,6 +144,7 @@ h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
 .btn-gold:hover { box-shadow: 0 10px 36px rgba(212, 175, 55, 0.45); transform: translateY(-2px); }
 details summary { cursor: pointer; user-select: none; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -76,11 +153,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -218,7 +295,7 @@ Lo indignante no es pagar más — el celíaco entiende que hacer bien las cosas
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Comida sin gluten con precios a la vista</h2>
   <p class="text-lg text-gray-700 mb-6">Cocina 100% libre de gluten, producción por encargo y congelado al vacío: pagás por comida bien hecha, no por vitrina. Mirá el menú completo con todos los precios publicados.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -230,6 +307,15 @@ Lo indignante no es pagar más — el celíaco entiende que hacer bien las cosas
     <li><a href="/blog/pan-sin-gluten-industrial-vs-artesanal/" class="text-yellow-700 hover:underline">Pan sin gluten industrial vs artesanal: diferencias reales</a></li>
     <li><a href="/blog/productos-sin-gluten-supermercado-asuncion/" class="text-yellow-700 hover:underline">Productos sin gluten en supermercados de Asunción</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -251,7 +337,7 @@ Lo indignante no es pagar más — el celíaco entiende que hacer bien las cosas
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
         <li><a href="/politica-privacidad/" class="hover:text-yellow-700">Privacidad</a></li>

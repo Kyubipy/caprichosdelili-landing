@@ -33,19 +33,102 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Cómo descongelar pan sin gluten correctamente", "item": "https://caprichosdelili.com/blog/como-descongelar-pan-sin-gluten/" }
-    ]},
-    { "@type": "Article", "headline": "Cómo descongelar pan sin gluten correctamente: 4 métodos que no arruinan la textura", "image": "https://caprichosdelili.com/assets/img/blog/como-descongelar-pan-sin-gluten.webp", "datePublished": "2026-06-27", "dateModified": "2026-06-27", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "Cuatro métodos verificados para descongelar pan sin gluten sin perder textura: temperatura ambiente, horno, tostadora y microondas con humedad." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿Cuál es el mejor método para descongelar pan sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "El método más fiable es descongelar a temperatura ambiente dentro del envoltorio original o una bolsa cerrada: rebanadas tardan unos 30 minutos, panecillos cerca de 1 hora y hogazas enteras alrededor de 3 horas. Si querés recuperar corteza crujiente, después pasalo unos minutos por horno a unos 175 °C. Es el método con menos riesgo de migaja gomosa o quebradiza." } },
-      { "@type": "Question", "name": "¿Puedo poner pan sin gluten congelado directo en la tostadora?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, y es uno de los mejores métodos para rebanadas finas. Muchas tostadoras tienen una función específica 'frozen' o 'defrost'. La humedad atrapada en el pan congelado se convierte en vapor que mantiene la miga blanda mientras la superficie se dora. No hace falta descongelar antes y, de hecho, descongelar y después tostar suele dar peor textura." } },
-      { "@type": "Question", "name": "¿Por qué el pan sin gluten se endurece más rápido que el pan común?", "acceptedAnswer": { "@type": "Answer", "text": "Por la retrogradación del almidón. Sin la red de gluten que regula la humedad, las moléculas de amilosa y amilopectina recristalizan más rápido y expulsan agua de la miga. Estudios publicados en Foods (MDPI, 2021) midieron que el control de pan sin gluten sin psyllium llegó a tener firmeza hasta 8 veces mayor que el pan de trigo de referencia, una velocidad de endurecimiento muy superior a la del pan de trigo." } },
-      { "@type": "Question", "name": "¿Cuánto tiempo puedo tener pan sin gluten en el freezer?", "acceptedAnswer": { "@type": "Answer", "text": "Para mantener calidad óptima, lo recomendable es entre 1 y 3 meses en un freezer doméstico a unos -18 °C. Después de ese plazo el pan sigue siendo seguro si la cadena de frío no se rompió, pero empieza a perder sabor y la superficie sufre quemaduras de freezer que arruinan la textura al descongelar." } },
-      { "@type": "Question", "name": "¿Puedo volver a congelar pan sin gluten que ya descongelé?", "acceptedAnswer": { "@type": "Answer", "text": "No se recomienda. El fabricante español Adpan y la literatura científica sobre staling de pan congelado coinciden: cada ciclo de congelado y descongelado acelera la pérdida de humedad y la retrogradación del almidón. El resultado es un pan visiblemente más seco y quebradizo. Conviene descongelar solo la porción que vas a consumir en el día." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cómo descongelar pan sin gluten correctamente",
+          "item": "https://caprichosdelili.com/blog/como-descongelar-pan-sin-gluten/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Cómo descongelar pan sin gluten correctamente: 4 métodos que no arruinan la textura",
+      "image": "https://caprichosdelili.com/assets/img/blog/como-descongelar-pan-sin-gluten.webp",
+      "datePublished": "2026-06-27",
+      "dateModified": "2026-06-27",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "Cuatro métodos verificados para descongelar pan sin gluten sin perder textura: temperatura ambiente, horno, tostadora y microondas con humedad.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/como-descongelar-pan-sin-gluten/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el mejor método para descongelar pan sin gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El método más fiable es descongelar a temperatura ambiente dentro del envoltorio original o una bolsa cerrada: rebanadas tardan unos 30 minutos, panecillos cerca de 1 hora y hogazas enteras alrededor de 3 horas. Si querés recuperar corteza crujiente, después pasalo unos minutos por horno a unos 175 °C. Es el método con menos riesgo de migaja gomosa o quebradiza."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo poner pan sin gluten congelado directo en la tostadora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, y es uno de los mejores métodos para rebanadas finas. Muchas tostadoras tienen una función específica 'frozen' o 'defrost'. La humedad atrapada en el pan congelado se convierte en vapor que mantiene la miga blanda mientras la superficie se dora. No hace falta descongelar antes y, de hecho, descongelar y después tostar suele dar peor textura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué el pan sin gluten se endurece más rápido que el pan común?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por la retrogradación del almidón. Sin la red de gluten que regula la humedad, las moléculas de amilosa y amilopectina recristalizan más rápido y expulsan agua de la miga. Estudios publicados en Foods (MDPI, 2021) midieron que el control de pan sin gluten sin psyllium llegó a tener firmeza hasta 8 veces mayor que el pan de trigo de referencia, una velocidad de endurecimiento muy superior a la del pan de trigo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo puedo tener pan sin gluten en el freezer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para mantener calidad óptima, lo recomendable es entre 1 y 3 meses en un freezer doméstico a unos -18 °C. Después de ese plazo el pan sigue siendo seguro si la cadena de frío no se rompió, pero empieza a perder sabor y la superficie sufre quemaduras de freezer que arruinan la textura al descongelar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo volver a congelar pan sin gluten que ya descongelé?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No se recomienda. El fabricante español Adpan y la literatura científica sobre staling de pan congelado coinciden: cada ciclo de congelado y descongelado acelera la pérdida de humedad y la retrogradación del almidón. El resultado es un pan visiblemente más seco y quebradizo. Conviene descongelar solo la porción que vas a consumir en el día."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -68,6 +151,7 @@ h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
 .btn-gold:hover { box-shadow: 0 10px 36px rgba(212, 175, 55, 0.45); transform: translateY(-2px); }
 details summary { cursor: pointer; user-select: none; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -76,11 +160,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -237,7 +321,7 @@ Atención: el pan calentado en microondas se endurece muy rápido al enfriarse. 
 
 <h2>Errores frecuentes al descongelar pan sin gluten</h2>
 
-<p>Veo estos errores a diario en consulta y en grupos de familias celíacas. Si los evitás, ya estás haciendo el 80 % del trabajo.</p>
+<p>Veo estos errores a diario en familias celíacas y en grupos de familias celíacas. Si los evitás, ya estás haciendo el 80 % del trabajo.</p>
 
 <h3>Descongelar en la heladera</h3>
 
@@ -277,7 +361,7 @@ Atención: el pan calentado en microondas se endurece muy rápido al enfriarse. 
 
 <p>Te voy a ser directa: planificar el descongelado, mantener el freezer calibrado, rebanar en porciones, etiquetar fechas, rotar stock — todo esto es <strong>trabajo invisible</strong> que pesa más en las familias que ya tienen mil cosas encima. Si trabajás muchas horas, tenés hijos chicos o querés simplificar la logística de la dieta sin TACC, hay otra forma de encarar el problema.</p>
 
-<p>En Caprichos de Lili producimos pan y comidas sin gluten en una cocina <strong>100 % libre de TACC</strong>, sin convivencia con trigo. El <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Pack Semanal</a> entrega comidas completas pensadas para el ritmo real de una familia: porciones individuales, listas para calentar, con indicaciones claras de manejo. La idea es exactamente esa: que no tengas que volverte experto en retrogradación del almidón solo para almorzar bien.</p>
+<p>En Caprichos de Lili producimos pan y comidas sin gluten en una cocina <strong>100 % libre de TACC</strong>, sin convivencia con trigo. El <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Menú</a> entrega comidas completas pensadas para el ritmo real de una familia: porciones individuales, listas para calentar, con indicaciones claras de manejo. La idea es exactamente esa: que no tengas que volverte experto en retrogradación del almidón solo para almorzar bien.</p>
 
 <p>El pan congelado no es un problema. Es un recurso. Cuando entendés cómo funciona, lo aprovechás. Cuando no, lo desperdiciás. Y para las familias que prefieren delegar el trabajo invisible, también está esa opción.</p>
 
@@ -334,8 +418,8 @@ Atención: el pan calentado en microondas se endurece muy rápido al enfriarse. 
 
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">¿Querés simplificar la cocina celíaca?</h2>
-  <p class="text-lg text-gray-700 mb-6">Nuestro Pack Semanal entrega comidas completas sin TACC, listas para calentar, con indicaciones claras de manejo. Cocina 100 % libre de gluten — sin contaminación cruzada, sin esfuerzo, sin pensar en retrogradación del almidón.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <p class="text-lg text-gray-700 mb-6">Nuestro menú congelado al vacío incluye pan, milanesas, Pizzeta XL, lasaña y ñoquis sin TACC, listos para calentar, con indicaciones claras de manejo. Cocina 100 % libre de gluten — sin contaminación cruzada, sin esfuerzo, sin pensar en retrogradación del almidón.</p>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -347,6 +431,15 @@ Atención: el pan calentado en microondas se endurece muy rápido al enfriarse. 
     <li><a href="/blog/errores-cocinar-sin-gluten/" class="text-yellow-700 hover:underline">5 errores comunes al cocinar sin gluten en casa</a></li>
     <li><a href="/blog/contaminacion-cruzada-gluten/" class="text-yellow-700 hover:underline">Contaminación cruzada: la trampa invisible de la cocina mixta</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -368,7 +461,7 @@ Atención: el pan calentado en microondas se endurece muy rápido al enfriarse. 
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
       </ul>
@@ -377,6 +470,8 @@ Atención: el pan calentado en microondas se endurece muy rápido al enfriarse. 
   <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
     © 2026 Caprichos de Lili · Todos los derechos reservados
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 
 </body>

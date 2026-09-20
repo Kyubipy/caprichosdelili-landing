@@ -38,21 +38,96 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Cómo congelar comida sin gluten", "item": "https://caprichosdelili.com/blog/congelar-comida-sin-gluten/" }
-    ]},
-    { "@type": "Article", "headline": "Cómo congelar comida sin gluten correctamente", "image": "https://caprichosdelili.com/assets/img/blog/congelar-comida-sin-gluten.webp", "datePublished": "2026-06-03", "dateModified": "2026-06-03", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } } },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿Cuánto tiempo dura la comida sin gluten congelada?", "acceptedAnswer": { "@type": "Answer", "text": "Depende del plato: panificados sin gluten 1-2 meses, comidas con carne 2-3 meses, comidas con verduras 2-3 meses, salsas 3-4 meses. Más allá de esos tiempos no es inseguro, pero pierde calidad de sabor y textura." } },
-      { "@type": "Question", "name": "¿Se puede congelar pan sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Se congela mejor en porciones individuales pre-cortadas. Aguanta 1-2 meses sin perder textura significativamente. Descongelar en horno tostador, no microondas." } },
-      { "@type": "Question", "name": "¿Cuál es el principal riesgo al congelar comida celíaca?", "acceptedAnswer": { "@type": "Answer", "text": "El principal riesgo NO es bacteriano (el frío conserva bien), sino contaminación cruzada con gluten en el freezer si comparte espacio con productos con trigo. Usar recipientes herméticos y separación física." } },
-      { "@type": "Question", "name": "¿Puedo congelar y volver a congelar?", "acceptedAnswer": { "@type": "Answer", "text": "No es recomendable. Cada ciclo congelación-descongelación-congelación deteriora la textura, aumenta riesgo bacteriano y, en comida celíaca, aumenta riesgo de contaminación cruzada durante manipulación." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cómo congelar comida sin gluten",
+          "item": "https://caprichosdelili.com/blog/congelar-comida-sin-gluten/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Cómo congelar comida sin gluten correctamente",
+      "image": "https://caprichosdelili.com/assets/img/blog/congelar-comida-sin-gluten.webp",
+      "datePublished": "2026-06-03",
+      "dateModified": "2026-06-03",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/congelar-comida-sin-gluten/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo dura la comida sin gluten congelada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende del plato: panificados sin gluten 1-2 meses, comidas con carne 2-3 meses, comidas con verduras 2-3 meses, salsas 3-4 meses. Más allá de esos tiempos no es inseguro, pero pierde calidad de sabor y textura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede congelar pan sin gluten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Se congela mejor en porciones individuales pre-cortadas. Aguanta 1-2 meses sin perder textura significativamente. Descongelar en horno tostador, no microondas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el principal riesgo al congelar comida celíaca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El principal riesgo NO es bacteriano (el frío conserva bien), sino contaminación cruzada con gluten en el freezer si comparte espacio con productos con trigo. Usar recipientes herméticos y separación física."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo congelar y volver a congelar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No es recomendable. Cada ciclo congelación-descongelación-congelación deteriora la textura, aumenta riesgo bacteriano y, en comida celíaca, aumenta riesgo de contaminación cruzada durante manipulación."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="text-stone-900 font-sans">
 
@@ -318,12 +393,23 @@
   </div>
 </section>
 
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
+</section>
+
 </article>
 
 <footer class="bg-stone-900 text-cream-100 mt-20 py-10">
 <div class="max-w-3xl mx-auto px-4 text-center text-sm">
 <p>© 2026 Caprichos de Lili · Comida sin gluten artesanal en Asunción · <a href="/" class="underline">Inicio</a> · <a href="/blog/" class="underline">Blog</a></p>
 </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 
 </body>

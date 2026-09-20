@@ -33,19 +33,102 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Recetas con pan sin gluten Caprichos", "item": "https://caprichosdelili.com/blog/recetas-con-pan-caprichos-sandwich-tostada/" }
-    ]},
-    { "@type": "Article", "headline": "Recetas con pan sin gluten: sándwich, tostadas y pan francés con el pan Caprichos", "image": "https://caprichosdelili.com/assets/img/blog/recetas-con-pan-caprichos-sandwich-tostada.webp", "datePublished": "2026-06-27", "dateModified": "2026-06-27", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "5 recetas reales con pan sin gluten Caprichos para la familia celíaca: croque madame adaptado, pain perdu, bruschetta, croutons y sándwich frío bien armado." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿Por qué el pan sin gluten se desmorona cuando intento hacer un sándwich?", "acceptedAnswer": { "@type": "Answer", "text": "Porque el pan sin gluten no tiene la red elástica que aporta el gluten al pan de trigo. Sin esa red, la miga es más frágil y absorbe humedad más rápido. La solución no es agregar más miga sino tostarlo previamente: el calor seco gelatiniza los almidones y le da estructura. Tostá las dos rebanadas antes de armar el sándwich y vas a notar la diferencia inmediatamente." } },
-      { "@type": "Question", "name": "¿Cuánto tiempo puedo conservar el pan sin gluten antes de que se ponga duro?", "acceptedAnswer": { "@type": "Answer", "text": "A temperatura ambiente, el pan sin gluten dura entre 2 y 3 días si se mantiene en bolsa cerrada, pero después se endurece rápido por su menor contenido de humedad. Si no lo vas a consumir en ese plazo, lo mejor es congelarlo en rebanadas individuales: aguanta hasta 3 meses sin perder calidad y se tuesta directamente del freezer." } },
-      { "@type": "Question", "name": "¿Puedo hacer pain perdu (tostadas francesas) con pan sin gluten del día anterior?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, y de hecho funciona mejor con pan de un día o dos. El pan ligeramente seco absorbe la mezcla de huevo y leche sin desarmarse, que es justamente el principio original del pain perdu medieval: reaprovechar pan duro. La proporción base es 2 huevos y 200 ml de leche por cada 4 rebanadas, con un toque de vainilla o canela." } },
-      { "@type": "Question", "name": "¿El pan sin gluten sirve para hacer croque monsieur o croque madame?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, con dos ajustes. Primero, tostá ligeramente las rebanadas antes de armar el sándwich para que aguanten la bechamel sin volverse pastosas. Segundo, asegurate de que el jamón y el queso sean confirmados sin TACC: muchos fiambres llevan trazas de gluten como aglutinantes. Con esos dos cuidados, el resultado es indistinguible de la versión con pan de trigo." } },
-      { "@type": "Question", "name": "¿Cómo evito que las bruschettas con pan sin gluten queden empapadas?", "acceptedAnswer": { "@type": "Answer", "text": "Tostá el pan a horno fuerte (200 grados C) durante 5 a 7 minutos hasta que esté dorado y crujiente, después untalo con ajo, rociá con aceite de oliva y recién al final colocá el tomate. Si ponés el tomate sobre pan tibio sin tostar bien, la humedad lo arruina. El truco está en la barrera de aceite y en que el pan esté completamente seco antes del topping." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Recetas con pan sin gluten Caprichos",
+          "item": "https://caprichosdelili.com/blog/recetas-con-pan-caprichos-sandwich-tostada/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Recetas con pan sin gluten: sándwich, tostadas y pan francés con el pan Caprichos",
+      "image": "https://caprichosdelili.com/assets/img/blog/recetas-con-pan-caprichos-sandwich-tostada.webp",
+      "datePublished": "2026-06-27",
+      "dateModified": "2026-06-27",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "5 recetas reales con pan sin gluten Caprichos para la familia celíaca: croque madame adaptado, pain perdu, bruschetta, croutons y sándwich frío bien armado.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/recetas-con-pan-caprichos-sandwich-tostada/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Por qué el pan sin gluten se desmorona cuando intento hacer un sándwich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque el pan sin gluten no tiene la red elástica que aporta el gluten al pan de trigo. Sin esa red, la miga es más frágil y absorbe humedad más rápido. La solución no es agregar más miga sino tostarlo previamente: el calor seco gelatiniza los almidones y le da estructura. Tostá las dos rebanadas antes de armar el sándwich y vas a notar la diferencia inmediatamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo puedo conservar el pan sin gluten antes de que se ponga duro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A temperatura ambiente, el pan sin gluten dura entre 2 y 3 días si se mantiene en bolsa cerrada, pero después se endurece rápido por su menor contenido de humedad. Si no lo vas a consumir en ese plazo, lo mejor es congelarlo en rebanadas individuales: aguanta hasta 3 meses sin perder calidad y se tuesta directamente del freezer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo hacer pain perdu (tostadas francesas) con pan sin gluten del día anterior?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, y de hecho funciona mejor con pan de un día o dos. El pan ligeramente seco absorbe la mezcla de huevo y leche sin desarmarse, que es justamente el principio original del pain perdu medieval: reaprovechar pan duro. La proporción base es 2 huevos y 200 ml de leche por cada 4 rebanadas, con un toque de vainilla o canela."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El pan sin gluten sirve para hacer croque monsieur o croque madame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, con dos ajustes. Primero, tostá ligeramente las rebanadas antes de armar el sándwich para que aguanten la bechamel sin volverse pastosas. Segundo, asegurate de que el jamón y el queso sean confirmados sin TACC: muchos fiambres llevan trazas de gluten como aglutinantes. Con esos dos cuidados, el resultado es indistinguible de la versión con pan de trigo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo evito que las bruschettas con pan sin gluten queden empapadas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tostá el pan a horno fuerte (200 grados C) durante 5 a 7 minutos hasta que esté dorado y crujiente, después untalo con ajo, rociá con aceite de oliva y recién al final colocá el tomate. Si ponés el tomate sobre pan tibio sin tostar bien, la humedad lo arruina. El truco está en la barrera de aceite y en que el pan esté completamente seco antes del topping."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -73,6 +156,7 @@ details summary { cursor: pointer; user-select: none; }
 .recipe-meta { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.875rem; color: #78350f; margin-bottom: 1rem; }
 .recipe-meta span { display: inline-flex; align-items: center; gap: 0.25rem; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -81,11 +165,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -118,7 +202,7 @@ details summary { cursor: pointer; user-select: none; }
 
 <div class="prose max-w-none">
 
-<p>Una cosa que escucho seguido en consulta: <em>"el pan sin gluten lo compro, le doy una mordida, y el resto queda en la mesada porque no sé qué hacer con él"</em>. Es una pena. El pan sin gluten artesanal cuesta más, requiere planificación, y muchas familias terminan tirando rebanadas porque no encuentran cómo incorporarlas al día a día sin que se desmoronen.</p>
+<p>Una cosa que escucho seguido en familias celíacas: <em>"el pan sin gluten lo compro, le doy una mordida, y el resto queda en la mesada porque no sé qué hacer con él"</em>. Es una pena. El pan sin gluten artesanal cuesta más, requiere planificación, y muchas familias terminan tirando rebanadas porque no encuentran cómo incorporarlas al día a día sin que se desmoronen.</p>
 
 <p>Como médica pediatra neonatóloga y como celíaca diagnosticada hace años, en mi propia cocina pasé por todo eso. Probé reemplazar 1:1 las recetas con pan de trigo y fracasé. Después fui entendiendo que el <strong>pan sin gluten necesita su propia técnica</strong> — y cuando se respeta esa técnica, los resultados son tan buenos como con cualquier otro pan.</p>
 
@@ -375,7 +459,7 @@ Recordá que en Paraguay rige la Ley N° 6072/2018 (modificada por la Ley N° 69
 
 <h2>Si querés simplificar todavía más la semana</h2>
 
-<p>Estas recetas requieren tiempo. Si trabajás muchas horas o preferís no convertir la cocina en una tarea adicional, en Caprichos de Lili producimos en una cocina <strong>100% libre de TACC</strong>. Nuestro <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Pack Semanal</a> entrega 7 almuerzos completos sin gluten, listos para calentar, con delivery en Gran Asunción. Lo combinás con el pan sin gluten para los desayunos y meriendas, y la semana queda resuelta.</p>
+<p>Estas recetas requieren tiempo. Si trabajás muchas horas o preferís no convertir la cocina en una tarea adicional, en Caprichos de Lili producimos en una cocina <strong>100% libre de TACC</strong>. Nuestro <a href="/pack-semanal/" class="text-yellow-700 font-semibold underline hover:text-yellow-800">Menú</a> entrega 7 almuerzos completos sin gluten, listos para calentar, con delivery en Gran Asunción. Lo combinás con el pan sin gluten para los desayunos y meriendas, y la semana queda resuelta.</p>
 
 <h2>Cierre</h2>
 
@@ -430,8 +514,8 @@ Recordá que en Paraguay rige la Ley N° 6072/2018 (modificada por la Ley N° 69
 
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">¿Querés simplificar la semana sin gluten?</h2>
-  <p class="text-lg text-gray-700 mb-6">Combiná el pan sin gluten Caprichos con nuestro Pack Semanal de 7 almuerzos listos para calentar. Cocina 100% libre de TACC — sin contaminación cruzada, sin esfuerzo, sin pensar.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <p class="text-lg text-gray-700 mb-6">Combiná el pan sin gluten Caprichos con el resto de nuestro menú congelado al vacío: milanesas, Pizzeta XL, lasaña y ñoquis listos para calentar. Cocina 100% libre de TACC — sin contaminación cruzada, sin esfuerzo, sin pensar.</p>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -443,6 +527,15 @@ Recordá que en Paraguay rige la Ley N° 6072/2018 (modificada por la Ley N° 69
     <li><a href="/blog/menu-semanal-sin-gluten/" class="text-yellow-700 hover:underline">Menú semanal sin gluten: cómo planificarlo para no aburrirse</a></li>
     <li><a href="/blog/alimentos-con-gluten-oculto/" class="text-yellow-700 hover:underline">Alimentos con gluten oculto que pasan desapercibidos</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -464,7 +557,7 @@ Recordá que en Paraguay rige la Ley N° 6072/2018 (modificada por la Ley N° 69
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
       </ul>
@@ -473,6 +566,8 @@ Recordá que en Paraguay rige la Ley N° 6072/2018 (modificada por la Ley N° 69
   <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
     © 2026 Caprichos de Lili · Todos los derechos reservados
   </div>
+
+<div class="max-w-6xl mx-auto px-4 mt-6 text-xs text-center opacity-80"><a href="/sobre-nosotros/" class="underline hover:no-underline">Sobre nosotros</a> · <a href="/dra-norma-borja/" class="underline hover:no-underline">La Dra. Borja</a> · <a href="/politica-privacidad/" class="underline hover:no-underline">Privacidad</a> · <a href="/terminos-condiciones/" class="underline hover:no-underline">Términos</a></div>
 </footer>
 
 </body>

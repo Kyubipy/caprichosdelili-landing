@@ -33,19 +33,102 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "BreadcrumbList", "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://caprichosdelili.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://caprichosdelili.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Harinas sin gluten: guía completa", "item": "https://caprichosdelili.com/blog/harinas-sin-gluten-guia-completa/" }
-    ]},
-    { "@type": "Article", "headline": "Harinas sin gluten: guía completa para saber cuál usar en cada receta", "image": "https://caprichosdelili.com/assets/img/blog/harinas-sin-gluten-guia-completa.webp", "datePublished": "2026-07-20", "dateModified": "2026-07-20", "inLanguage": "es-PY", "author": { "@type": "Person", "name": "Dra. Norma Liliana Borja", "jobTitle": "Médica Pediatra Neonatóloga", "url": "https://caprichosdelili.com/" }, "publisher": { "@type": "Organization", "name": "Caprichos de Lili", "logo": { "@type": "ImageObject", "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg" } }, "description": "Guía completa de harinas sin gluten: tipos, propiedades, proporciones de mezcla y cuál elegir para pan, tortas, empanadas y rebozados. Con datos nutricionales verificados." },
-    { "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "¿Puedo usar una sola harina sin gluten para todo?", "acceptedAnswer": { "@type": "Answer", "text": "No es recomendable. Cada harina sin gluten tiene propiedades distintas: la de arroz aporta estructura pero queda seca sola, el almidón de mandioca da elasticidad pero no tiene proteína, la de almendras da humedad pero es densa. Para obtener resultados similares al trigo, necesitás combinar al menos 2-3 harinas que se complementen. Una mezcla base funcional es 2 partes de harina de arroz + ⅔ parte de fécula de papa + ⅓ parte de almidón de mandioca." } },
-      { "@type": "Question", "name": "¿Cuál es la mejor harina sin gluten para hacer pan?", "acceptedAnswer": { "@type": "Answer", "text": "Para pan sin gluten, la mejor base es una mezcla de harina de arroz con almidón de mandioca (tapioca) y un aglutinante como psyllium husk o goma xantana. El psyllium husk (10-25 g por cada 500 g de mezcla de harinas) es preferido por muchos panaderos porque aporta fibra, retiene agua y crea una estructura elástica que se parece a la del gluten. El almidón de mandioca es clave para la elasticidad y la corteza crujiente." } },
-      { "@type": "Question", "name": "¿Qué diferencia hay entre almidón de mandioca y fécula de maíz?", "acceptedAnswer": { "@type": "Answer", "text": "Ambos son almidones puros (sin proteína ni fibra significativa), pero se comportan distinto. El almidón de mandioca (tapioca) aporta elasticidad y masticabilidad — es el que da la textura elástica de la chipa paraguaya y el pan de queso brasileño. La fécula de maíz (Maizena) aligera la textura y da suavidad — es ideal para tortas, bizcochuelos y salsas. En una mezcla para pan, usá tapioca; para tortas, fécula de maíz; para una mezcla multiuso, combiná ambas." } },
-      { "@type": "Question", "name": "¿La harina de almendras sirve para celíacos con diabetes?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, es una de las mejores opciones. La harina de almendras tiene muy pocos carbohidratos (~10 g/100 g frente a ~76 g/100 g de la harina de arroz), es alta en proteínas (~21 g/100 g), alta en grasas saludables y tiene un índice glucémico bajo. Es ideal para celíacos que además necesitan controlar la glucemia. La desventaja: es cara, no sube como las harinas con almidón, y da resultados densos y húmedos. Funciona excelente para galletas, bases de tartas y bizcochos bajos, pero no para pan esponjoso." } },
-      { "@type": "Question", "name": "¿Goma xantana o psyllium husk: cuál uso?", "acceptedAnswer": { "@type": "Answer", "text": "Depende de la receta. La goma xantana es un espesante producido por fermentación bacteriana (Xanthomonas campestris) — funciona en pequeñas cantidades (1 cucharadita por taza de harina) y es más versátil para recetas rápidas como galletas, muffins y tortas. El psyllium husk es cáscara de semilla de plantago, 100% fibra natural — funciona mejor para pan porque absorbe mucha agua, crea estructura elástica y mejora la fermentación. Si hacés pan, psyllium. Si hacés tortas o galletas, goma xantana. Ambos son seguros para celíacos." } }
-    ]}
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://caprichosdelili.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://caprichosdelili.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Harinas sin gluten: guía completa",
+          "item": "https://caprichosdelili.com/blog/harinas-sin-gluten-guia-completa/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Harinas sin gluten: guía completa para saber cuál usar en cada receta",
+      "image": "https://caprichosdelili.com/assets/img/blog/harinas-sin-gluten-guia-completa.webp",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20",
+      "inLanguage": "es-PY",
+      "author": {
+        "@type": "Person",
+        "@id": "https://caprichosdelili.com/#lili",
+        "name": "Dra. Norma Liliana Borja",
+        "jobTitle": "Médica Pediatra Neonatóloga",
+        "url": "https://caprichosdelili.com/dra-norma-borja/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Caprichos de Lili",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://caprichosdelili.com/assets/img/mascota-fidein.jpg"
+        }
+      },
+      "description": "Guía completa de harinas sin gluten: tipos, propiedades, proporciones de mezcla y cuál elegir para pan, tortas, empanadas y rebozados. Con datos nutricionales verificados.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://caprichosdelili.com/blog/harinas-sin-gluten-guia-completa/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar una sola harina sin gluten para todo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No es recomendable. Cada harina sin gluten tiene propiedades distintas: la de arroz aporta estructura pero queda seca sola, el almidón de mandioca da elasticidad pero no tiene proteína, la de almendras da humedad pero es densa. Para obtener resultados similares al trigo, necesitás combinar al menos 2-3 harinas que se complementen. Una mezcla base funcional es 2 partes de harina de arroz + ⅔ parte de fécula de papa + ⅓ parte de almidón de mandioca."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la mejor harina sin gluten para hacer pan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para pan sin gluten, la mejor base es una mezcla de harina de arroz con almidón de mandioca (tapioca) y un aglutinante como psyllium husk o goma xantana. El psyllium husk (10-25 g por cada 500 g de mezcla de harinas) es preferido por muchos panaderos porque aporta fibra, retiene agua y crea una estructura elástica que se parece a la del gluten. El almidón de mandioca es clave para la elasticidad y la corteza crujiente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre almidón de mandioca y fécula de maíz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ambos son almidones puros (sin proteína ni fibra significativa), pero se comportan distinto. El almidón de mandioca (tapioca) aporta elasticidad y masticabilidad — es el que da la textura elástica de la chipa paraguaya y el pan de queso brasileño. La fécula de maíz (Maizena) aligera la textura y da suavidad — es ideal para tortas, bizcochuelos y salsas. En una mezcla para pan, usá tapioca; para tortas, fécula de maíz; para una mezcla multiuso, combiná ambas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La harina de almendras sirve para celíacos con diabetes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, es una de las mejores opciones. La harina de almendras tiene muy pocos carbohidratos (~10 g/100 g frente a ~76 g/100 g de la harina de arroz), es alta en proteínas (~21 g/100 g), alta en grasas saludables y tiene un índice glucémico bajo. Es ideal para celíacos que además necesitan controlar la glucemia. La desventaja: es cara, no sube como las harinas con almidón, y da resultados densos y húmedos. Funciona excelente para galletas, bases de tartas y bizcochos bajos, pero no para pan esponjoso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Goma xantana o psyllium husk: cuál uso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de la receta. La goma xantana es un espesante producido por fermentación bacteriana (Xanthomonas campestris) — funciona en pequeñas cantidades (1 cucharadita por taza de harina) y es más versátil para recetas rápidas como galletas, muffins y tortas. El psyllium husk es cáscara de semilla de plantago, 100% fibra natural — funciona mejor para pan porque absorbe mucha agua, crea estructura elástica y mejora la fermentación. Si hacés pan, psyllium. Si hacés tortas o galletas, goma xantana. Ambos son seguros para celíacos."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -76,6 +159,7 @@ details summary { cursor: pointer; user-select: none; }
 .tag-rebozado { background: #d1fae5; color: #065f46; }
 .tag-empanada { background: #e0e7ff; color: #3730a3; }
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7426708215510967" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white">
 
@@ -84,11 +168,11 @@ details summary { cursor: pointer; user-select: none; }
     <a href="/" class="text-2xl serif font-bold text-gray-900">Caprichos<span class="text-yellow-600">deLili</span></a>
     <div class="hidden md:flex gap-6 text-sm">
       <a href="/" class="text-gray-700 hover:text-yellow-600">Inicio</a>
-      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Pack Semanal</a>
+      <a href="/pack-semanal/" class="text-gray-700 hover:text-yellow-600">Menú</a>
       <a href="/blog/" class="text-yellow-600 font-semibold">Blog</a>
       <a href="/contacto/" class="text-gray-700 hover:text-yellow-600">Contacto</a>
     </div>
-    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver Pack Semanal</a>
+    <a href="/pack-semanal/" class="btn-gold px-5 py-2 rounded-full text-sm">Ver menú</a>
   </nav>
 </header>
 
@@ -470,8 +554,8 @@ details summary { cursor: pointer; user-select: none; }
 
 <section class="mt-12 pt-8 border-t border-gray-200 bg-yellow-50/50 -mx-6 px-6 py-10 rounded-2xl">
   <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">¿Preferís que alguien mezcle las harinas por vos?</h2>
-  <p class="text-lg text-gray-700 mb-6">Nuestro Pack Semanal incluye pan artesanal sin gluten elaborado con mezclas propias de harinas seleccionadas, en cocina 100% libre de gluten. Sin premezclas genéricas, sin contaminación cruzada, sin pensar en proporciones.</p>
-  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver Pack Semanal →</a>
+  <p class="text-lg text-gray-700 mb-6">Nuestro menú incluye pan artesanal sin gluten elaborado con mezclas propias de harinas seleccionadas, en cocina 100% libre de gluten. Sin premezclas genéricas, sin contaminación cruzada, sin pensar en proporciones.</p>
+  <a href="/pack-semanal/" class="btn-gold inline-block px-8 py-3 rounded-full">Ver menú →</a>
 </section>
 
 <section class="mt-12">
@@ -483,6 +567,15 @@ details summary { cursor: pointer; user-select: none; }
     <li><a href="/blog/contaminacion-cruzada-gluten/" class="text-yellow-700 hover:underline">Contaminación cruzada: la trampa invisible de la cocina mixta</a></li>
     <li><a href="/blog/diabetes-celiaquia/" class="text-yellow-700 hover:underline">Diabetes y celiaquía: cómo manejar ambas dietas</a></li>
   </ul>
+</section>
+
+
+<!-- Sobre la autora (E-E-A-T) -->
+<section class="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8" aria-label="Sobre la autora">
+  <p class="text-xs font-bold uppercase tracking-widest text-amber-800 mb-2">Sobre la autora</p>
+  <p class="text-lg font-bold text-gray-900"><a href="/dra-norma-borja/" class="hover:underline">Dra. Norma Liliana Borja</a></p>
+  <p class="text-gray-800 mt-1">Médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires) · Celíaca · Reg. Prof. N° 6823 · Cofundadora de Caprichos de Lili y coautora del <a href="/libro-recetas-sin-gluten/" class="text-amber-800 underline hover:no-underline">recetario sin gluten</a>.</p>
+  <p class="text-sm text-gray-600 mt-3">Este artículo es informativo y no reemplaza la consulta con tu médico. <a href="/dra-norma-borja/" class="text-amber-800 underline hover:no-underline">Ver formación completa y todos sus artículos →</a></p>
 </section>
 
 </article>
@@ -504,7 +597,7 @@ details summary { cursor: pointer; user-select: none; }
       <h4 class="font-semibold text-gray-900 mb-2">Navegación</h4>
       <ul class="space-y-1">
         <li><a href="/" class="hover:text-yellow-700">Inicio</a></li>
-        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Pack Semanal</a></li>
+        <li><a href="/pack-semanal/" class="hover:text-yellow-700">Menú</a></li>
         <li><a href="/blog/" class="hover:text-yellow-700">Blog</a></li>
         <li><a href="/contacto/" class="hover:text-yellow-700">Contacto</a></li>
         <li><a href="/politica-privacidad/" class="hover:text-yellow-700">Privacidad</a></li>
