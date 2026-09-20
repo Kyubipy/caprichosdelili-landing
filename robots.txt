@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /eventos-sin-gluten/Caprichos-de-Lili-Eventos-menu-sin-gluten.pdf
 Allow: /
 
 Sitemap: https://caprichosdelili.com/sitemap.xml
