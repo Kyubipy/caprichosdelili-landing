@@ -25,3 +25,6 @@ Thumbs.db
 generate_*.py
 update_*.py
 .claude/
+
+# Documentos privados (con datos personales) - nunca al repo ni al sitio
+_privado/

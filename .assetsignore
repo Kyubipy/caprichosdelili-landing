@@ -12,3 +12,4 @@ memory/
 package*.json
 wrangler.toml
 CLAUDE.md
+_privado/
