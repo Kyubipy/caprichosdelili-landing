@@ -28,6 +28,9 @@ jobs:
       - name: Deploy con Wrangler
         uses: cloudflare/wrangler-action@v3
         with:
+          # wrangler 3.x (el default de la acción) ignora _headers en Workers Static Assets:
+          # lo subía como archivo público y no aplicaba las reglas. Con 4.x se aplican.
+          wranglerVersion: "4.137.0"
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
