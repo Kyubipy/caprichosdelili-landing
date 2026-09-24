@@ -1,3 +1,6 @@
 /eventos-sin-gluten/*.pdf
   X-Robots-Tag: noindex
   Content-Disposition: inline; filename="Caprichos de Lili Eventos - Menu sin gluten.pdf"
+
+/assets/img/*
+  Access-Control-Allow-Origin: *
