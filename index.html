@@ -105,7 +105,7 @@ tailwind.config = {
       "telephone": "+595985381866",
       "priceRange": "Gs. 22.000 - Gs. 66.000",
       "currenciesAccepted": "PYG",
-      "paymentAccepted": "Efectivo, Transferencia bancaria, Tarjeta de crédito",
+      "paymentAccepted": "Efectivo, Transferencia bancaria",
       "address": { "@type": "PostalAddress", "addressLocality": "Asunción", "addressRegion": "Central", "addressCountry": "PY" },
       "geo": { "@type": "GeoCoordinates", "latitude": -25.2637, "longitude": -57.5759 },
       "areaServed": [
@@ -114,7 +114,6 @@ tailwind.config = {
         { "@type": "City", "name": "Fernando de la Mora" },
         { "@type": "City", "name": "San Lorenzo" },
         { "@type": "City", "name": "Luque" },
-        { "@type": "City", "name": "Mariano Roque Alonso" },
         { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": -25.2637, "longitude": -57.5759 }, "geoRadius": 25000 }
       ],
       "servesCuisine": ["Sin gluten","Sin TACC","Sin azúcar","Celíaca","Paraguaya saludable"],
@@ -208,12 +207,12 @@ tailwind.config = {
       "@type": "FAQPage",
       "@id": "https://caprichosdelili.com/#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "¿La comida es 100% libre de gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Trabajamos en una cocina dedicada exclusivamente a productos sin gluten ni TACC, sin contaminación cruzada. La fundadora es médica pediatra y celíaca, así que conocemos los riesgos y los evitamos rigurosamente." } },
-        { "@type": "Question", "name": "¿Hacen delivery en Asunción?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, hacemos delivery en Asunción y Gran Asunción (Lambaré, Fernando de la Mora, San Lorenzo, Luque, Mariano Roque Alonso). Para coordinar entrega contactanos por WhatsApp al 0985 381866." } },
-        { "@type": "Question", "name": "¿Con cuánta anticipación tengo que pedir?", "acceptedAnswer": { "@type": "Answer", "text": "Recomendamos pedir con al menos 3 días de anticipación. Cocinamos por encargo para garantizar frescura y calidad — no producimos en serie ni almacenamos stock vencido." } },
-        { "@type": "Question", "name": "¿Cómo conservo los productos congelados al vacío?", "acceptedAnswer": { "@type": "Answer", "text": "Llegan congelados al vacío. Guardalos en el freezer hasta el día de consumo. Para descongelar, pasalos a la heladera la noche anterior. Las pizzetas y lasañas van directo del freezer al horno." } },
+        { "@type": "Question", "name": "¿La comida es 100% libre de gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. En nuestra cocina no entra harina de trigo ni ningún ingrediente con TACC: está dedicada exclusivamente a productos sin gluten, para evitar la contaminación cruzada. La fundadora es médica pediatra y celíaca, así que conocemos los riesgos y los cuidamos rigurosamente." } },
+        { "@type": "Question", "name": "¿Hacen delivery en Asunción?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Entregamos a domicilio en Asunción y Gran Asunción (Lambaré, Luque, Fernando de la Mora y San Lorenzo); otras zonas, a coordinar. También podés retirar el pedido coordinando antes. Escribinos por WhatsApp al 0985 381866." } },
+        { "@type": "Question", "name": "¿Con cuánta anticipación tengo que pedir?", "acceptedAnswer": { "@type": "Answer", "text": "Con al menos 3 días de anticipación. Cocinamos por encargo, sin stock acumulado, para garantizar frescura y calidad." } },
+        { "@type": "Question", "name": "¿Cómo conservo y preparo los productos congelados al vacío?", "acceptedAnswer": { "@type": "Answer", "text": "Llegan congelados al vacío: guardalos en el freezer hasta el día de consumo. Cada producto tiene su preparación: los ñoquis van directo del freezer al agua hirviendo, las milanesas directo a la placa caliente, la Pizzeta XL se descongela a temperatura ambiente antes de agregar los toppings y hornear, y el pan va directo a la tostadora o se descongela a temperatura ambiente dentro de su envoltorio (no en la heladera). Las indicaciones de cada producto están en el menú." } },
         { "@type": "Question", "name": "¿Tienen recetario o libro de recetas sin gluten?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Publicamos un recetario sin gluten en Amazon Kindle escrito por la Dra. Norma Liliana Borja, pediatra neonatóloga celíaca, y Roberto Rodas. Disponible en todas las tiendas Amazon (US, ES, MX, etc.)." } },
-        { "@type": "Question", "name": "¿Aceptan tarjeta de crédito?", "acceptedAnswer": { "@type": "Answer", "text": "Aceptamos efectivo, transferencia bancaria y tarjeta de crédito. La forma de pago se coordina al confirmar el pedido por WhatsApp." } }
+        { "@type": "Question", "name": "¿Cómo se paga?", "acceptedAnswer": { "@type": "Answer", "text": "Al entregar, en efectivo o por transferencia bancaria. Las condiciones de pago se acuerdan al confirmar el pedido por WhatsApp." } }
       ]
     },
     {
@@ -456,12 +455,48 @@ tailwind.config = {
       <h2 class="font-display text-4xl md:text-5xl font-bold text-stone-900">Una cocina 100% libre de gluten en Asunción</h2>
     </div>
     <div class="mt-12 space-y-5 text-stone-700 text-lg leading-relaxed">
-      <p>Caprichos de Lili es una cocina <strong class="text-stone-900">dedicada exclusivamente a comida sin gluten</strong> en Asunción. No compartimos espacios, utensilios ni equipos con harinas comunes — eso significa cero riesgo de contaminación cruzada para celíacos diagnosticados.</p>
+      <p>Caprichos de Lili es una cocina <strong class="text-stone-900">dedicada exclusivamente a comida sin gluten</strong> en Asunción. No compartimos espacios, utensilios ni equipos con harinas comunes — así minimizamos el riesgo de contaminación cruzada para celíacos diagnosticados.</p>
       <p>Cada receta nace de un proceso obsesivo: ingredientes pesados al gramo, fermentaciones controladas, técnicas documentadas y probadas hasta dar con la textura, el sabor y la conservación correctos. Sin azúcar refinada, con identidad paraguaya — Ka'a He'ẽ, kuratũ, queso Paraguay — y elaboración respaldada por criterio médico.</p>
       <p>Si querés ver las fórmulas exactas, las técnicas paso a paso y la ciencia detrás de cada masa, todo está documentado en el recetario completo: <a href="/libro-recetas-sin-gluten/" class="text-brand-500 font-semibold hover:underline">"Caprichos de Lili: Recetario Saludable Sin Gluten"</a>, disponible en Amazon Kindle.</p>
       <blockquote class="border-l-4 border-brand-500 pl-6 italic text-stone-900 font-display text-xl my-8">
         "Tu cocina es, a partir de ahora, tu laboratorio de sanación."
       </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="preguntas-frecuentes" class="py-20 bg-cream-50">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center">
+      <p class="text-brand-400 font-semibold text-sm uppercase tracking-widest mb-2">Dudas frecuentes</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-stone-900">Preguntas frecuentes</h2>
+    </div>
+    <div class="mt-12 space-y-4">
+      <details class="bg-white border border-cream-200 rounded-xl p-5 cursor-pointer">
+        <summary class="font-semibold text-stone-900">¿La comida es 100% libre de gluten?</summary>
+        <p class="mt-3 text-stone-700">Sí. En nuestra cocina no entra harina de trigo ni ningún ingrediente con TACC: está dedicada exclusivamente a productos sin gluten, para evitar la contaminación cruzada. La fundadora es médica pediatra y celíaca, así que conocemos los riesgos y los cuidamos rigurosamente.</p>
+      </details>
+      <details class="bg-white border border-cream-200 rounded-xl p-5 cursor-pointer">
+        <summary class="font-semibold text-stone-900">¿Hacen delivery en Asunción?</summary>
+        <p class="mt-3 text-stone-700">Sí. Entregamos a domicilio en Asunción y Gran Asunción (Lambaré, Luque, Fernando de la Mora y San Lorenzo); otras zonas, a coordinar. También podés retirar el pedido coordinando antes. Escribinos por WhatsApp al <a href="https://wa.me/595985381866" class="text-brand-500 font-semibold hover:underline">0985 381866</a>.</p>
+      </details>
+      <details class="bg-white border border-cream-200 rounded-xl p-5 cursor-pointer">
+        <summary class="font-semibold text-stone-900">¿Con cuánta anticipación tengo que pedir?</summary>
+        <p class="mt-3 text-stone-700">Con al menos 3 días de anticipación. Cocinamos por encargo, sin stock acumulado, para garantizar frescura y calidad.</p>
+      </details>
+      <details class="bg-white border border-cream-200 rounded-xl p-5 cursor-pointer">
+        <summary class="font-semibold text-stone-900">¿Cómo conservo y preparo los productos congelados al vacío?</summary>
+        <p class="mt-3 text-stone-700">Llegan congelados al vacío: guardalos en el freezer hasta el día de consumo. Cada producto tiene su preparación: los ñoquis van directo del freezer al agua hirviendo, las milanesas directo a la placa caliente, la Pizzeta XL se descongela a temperatura ambiente antes de agregar los toppings y hornear, y el pan va directo a la tostadora o se descongela a temperatura ambiente dentro de su envoltorio (no en la heladera). Las indicaciones de cada producto están en el <a href="/pack-semanal/" class="text-brand-500 font-semibold hover:underline">menú</a>.</p>
+      </details>
+      <details class="bg-white border border-cream-200 rounded-xl p-5 cursor-pointer">
+        <summary class="font-semibold text-stone-900">¿Tienen recetario o libro de recetas sin gluten?</summary>
+        <p class="mt-3 text-stone-700">Sí. Publicamos un <a href="/libro-recetas-sin-gluten/" class="text-brand-500 font-semibold hover:underline">recetario sin gluten en Amazon Kindle</a> escrito por la Dra. Norma Liliana Borja, pediatra neonatóloga celíaca, y Roberto Rodas. Disponible en todas las tiendas Amazon (US, ES, MX, etc.).</p>
+      </details>
+      <details class="bg-white border border-cream-200 rounded-xl p-5 cursor-pointer">
+        <summary class="font-semibold text-stone-900">¿Cómo se paga?</summary>
+        <p class="mt-3 text-stone-700">Al entregar, en efectivo o por transferencia bancaria. Las condiciones de pago se acuerdan al confirmar el pedido por WhatsApp.</p>
+      </details>
     </div>
   </div>
 </section>
