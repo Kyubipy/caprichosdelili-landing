@@ -132,20 +132,19 @@ tailwind.config = {
             {
               "@type": "DefinedRegion",
               "addressCountry": "PY",
+              "addressRegion": "Asunción"
+            },
+            {
+              "@type": "DefinedRegion",
+              "addressCountry": "PY",
               "addressRegion": "Central"
             }
           ],
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "0",
-            "currency": "PYG"
-          },
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
             "handlingTime": {
               "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 3,
+              "minValue": 3,
               "unitCode": "DAY"
             },
             "transitTime": {
@@ -155,11 +154,6 @@ tailwind.config = {
               "unitCode": "DAY"
             }
           }
-        },
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "PY",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
         }
       }
     },
@@ -167,7 +161,7 @@ tailwind.config = {
       "@type": "Product",
       "name": "Pan de Hamburguesa Sin Gluten (Pack x4)",
       "image": "https://caprichosdelili.com/assets/img/pan-hamburguesa.jpg",
-      "description": "Pan de hamburguesa artesanal sin gluten. Pack de 4 unidades. Congelado al vacío. Apto para celíacos.",
+      "description": "Pan de hamburguesa artesanal sin gluten, con sésamo. Pack de 4 unidades. Congelado al vacío. Apto para celíacos.",
       "brand": {
         "@type": "Organization",
         "name": "Caprichos de Lili",
@@ -190,20 +184,19 @@ tailwind.config = {
             {
               "@type": "DefinedRegion",
               "addressCountry": "PY",
+              "addressRegion": "Asunción"
+            },
+            {
+              "@type": "DefinedRegion",
+              "addressCountry": "PY",
               "addressRegion": "Central"
             }
           ],
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "0",
-            "currency": "PYG"
-          },
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
             "handlingTime": {
               "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 3,
+              "minValue": 3,
               "unitCode": "DAY"
             },
             "transitTime": {
@@ -213,11 +206,6 @@ tailwind.config = {
               "unitCode": "DAY"
             }
           }
-        },
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "PY",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
         }
       }
     },
@@ -248,20 +236,19 @@ tailwind.config = {
             {
               "@type": "DefinedRegion",
               "addressCountry": "PY",
+              "addressRegion": "Asunción"
+            },
+            {
+              "@type": "DefinedRegion",
+              "addressCountry": "PY",
               "addressRegion": "Central"
             }
           ],
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "0",
-            "currency": "PYG"
-          },
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
             "handlingTime": {
               "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 3,
+              "minValue": 3,
               "unitCode": "DAY"
             },
             "transitTime": {
@@ -271,11 +258,6 @@ tailwind.config = {
               "unitCode": "DAY"
             }
           }
-        },
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "PY",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
         }
       }
     },
@@ -319,7 +301,7 @@ tailwind.config = {
           "name": "¿Qué ingredientes tiene el pan sin gluten?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Harinas naturalmente libres de gluten, como trigo sarraceno, harina de arroz y almidón de mandioca, más semillas. No lleva gluten, ni TACC, ni azúcar refinada, y pasa por fermentación lenta para ganar sabor y una miga elástica."
+            "text": "Harinas naturalmente libres de gluten, como trigo sarraceno, harina de arroz y almidón de mandioca, y sésamo en los panes de sándwich y de hamburguesa. No lleva gluten, ni TACC, ni azúcar refinada, y pasa por fermentación lenta para ganar sabor y una miga elástica."
           }
         },
         {
@@ -343,7 +325,7 @@ tailwind.config = {
           "name": "¿Por qué el pan sin gluten es más caro que el común?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Harinas como el trigo sarraceno y aglutinantes como el psyllium cuestan más que la harina de trigo común. Además, exige una cocina dedicada para evitar la contaminación cruzada, fermentación más larga y envasado al vacío para conservarlo."
+            "text": "Porque exige harinas y aglutinantes específicos (como el trigo sarraceno y el psyllium), una cocina dedicada para evitar la contaminación cruzada, una fermentación más larga y el envasado al vacío para conservarlo."
           }
         },
         {
@@ -502,14 +484,14 @@ tailwind.config = {
 <section class="bg-white py-16">
   <div class="max-w-4xl mx-auto px-4 prose prose-stone prose-lg">
     <h2 id="que-es" class="font-display text-3xl md:text-4xl font-bold text-stone-900 scroll-mt-24">¿Qué es el pan sin gluten?</h2>
-    <p class="text-stone-700 leading-relaxed mt-4">El <strong>pan sin gluten</strong> es el que se elabora sin trigo, avena, cebada ni centeno —los cuatro cereales que se resumen con la sigla <strong>TACC</strong>— ni sus derivados. En su lugar se usan harinas y almidones naturalmente libres de gluten: trigo sarraceno (que, pese al nombre, no es trigo), harina de arroz, almidón de mandioca, harina de maíz o quinoa. Es el pan adecuado para personas con celiaquía, sensibilidad al gluten no celíaca o alergia al trigo.</p>
+    <p class="text-stone-700 leading-relaxed mt-4">El <strong>pan sin gluten</strong> es el que se elabora sin trigo, avena, cebada ni centeno —los cuatro cereales que se resumen con la sigla <strong>TACC</strong>— ni sus derivados. En su lugar se usan harinas y almidones naturalmente libres de gluten: trigo sarraceno (que, pese al nombre, no es trigo), harina de arroz, almidón de mandioca, harina de maíz o quinoa. Es el pan indicado para personas con celiaquía o con sensibilidad al gluten no celíaca. Si tenés alergia al trigo, mirá además la lista de ingredientes: la norma del Codex admite en los productos "sin gluten" almidón de trigo procesado para quitarle el gluten, que sigue siendo trigo.</p>
     <p class="text-stone-700 leading-relaxed mt-4">Ojo: "sin gluten" no es solo una lista de ingredientes. Para una persona celíaca también importa <strong>dónde y cómo</strong> se hizo el pan, porque restos de harina de trigo o migas de pan común pueden contaminarlo. Lo explicamos más abajo, en <a href="#como-reconocer" class="text-brand-500 font-semibold hover:underline">cómo reconocer un pan realmente apto</a>.</p>
 
     <h2 id="miga-esponjosa" class="font-display text-3xl md:text-4xl font-bold text-stone-900 mt-12 scroll-mt-24">¿Por qué cuesta lograr un pan sin gluten esponjoso?</h2>
     <p class="text-stone-700 leading-relaxed mt-4">En el pan común, al mezclar la harina de trigo con agua, dos grupos de proteínas —las <strong>gliadinas</strong> y las <strong>gluteninas</strong>— forman el gluten: una red elástica que atrapa el gas que produce la levadura. Esa red es la que deja crecer la masa y le da la miga aireada.</p>
     <p class="text-stone-700 leading-relaxed mt-4">Sin gluten, esa red no existe. La masa se parece más a una pasta espesa que a un bollo, retiene menos gas y tiende a quedar densa, a desmoronarse o a ponerse chiclosa. Por eso el pan sin gluten necesita su propia técnica:</p>
     <ul class="mt-4 space-y-2 text-stone-700">
-      <li><strong>Hidrocoloides</strong> como el psyllium, la goma xántica o la goma guar: al hidratarse aumentan la viscosidad de la masa y la ayudan a retener gas y agua, imitando en parte lo que hace el gluten.</li>
+      <li><strong>Hidrocoloides</strong> como el psyllium, la goma xantana o la goma guar: al hidratarse aumentan la viscosidad de la masa y la ayudan a retener gas y agua, imitando en parte lo que hace el gluten.</li>
       <li><strong>Mezcla de harinas y almidones:</strong> se combinan harinas con más sabor y proteína, como el trigo sarraceno, con almidones que aportan suavidad, como el de mandioca.</li>
       <li><strong>Más agua</strong> que en una masa de trigo y, en muchas recetas, <strong>huevos</strong>, cuyas proteínas ayudan a dar estructura.</li>
     </ul>
@@ -528,8 +510,8 @@ tailwind.config = {
     <h2 id="como-reconocer" class="font-display text-3xl md:text-4xl font-bold text-stone-900 mt-12 scroll-mt-24">Cómo reconocer un pan sin gluten realmente apto</h2>
     <p class="text-stone-700 leading-relaxed mt-4">Que un pan "no tenga harina de trigo" no alcanza. Estas son las tres cosas que conviene mirar:</p>
     <ol class="mt-4 space-y-3 text-stone-700 list-decimal list-inside">
-      <li><strong>Ingredientes.</strong> Ni trigo, avena, cebada ni centeno, ni derivados como la malta o el extracto de malta. El trigo sarraceno sí es apto: no es trigo. Y que un pan sea "integral" o "multicereal" no significa que sea sin gluten.</li>
-      <li><strong>Rótulo.</strong> En Paraguay, la Ley N° 6072/2018 (modificada y ampliada por la Ley N° 6914/2022) establece que los productos destinados a celíacos lleven, de forma clara y visible, la leyenda "sin gluten", "no contiene gluten" o "sin T.A.C.C.", y el Decreto N° 7553/2022 estableció el símbolo nacional que los identifica. Como referencia internacional, el Codex Alimentarius considera "sin gluten" a un alimento con no más de 20 mg de gluten por kilo (20 ppm). Si un pan envasado no trae la leyenda, no lo des por apto.</li>
+      <li><strong>Ingredientes.</strong> Ni trigo, avena, cebada ni centeno, ni derivados como la malta o el extracto de malta. El trigo sarraceno sí es apto: no es trigo. Y que un pan sea "integral" o "multicereal" no significa que sea sin gluten. Ojo también con las harinas "naturalmente" sin gluten (sarraceno, arroz, maíz): pueden contaminarse en la molienda o el envasado; en un estudio piloto de 2010, 7 de 22 harinas y granos sin gluten no rotulados superaron los 20 ppm. Para cocinar en casa, comprá harinas y almidones con leyenda sin gluten.</li>
+      <li><strong>Rótulo.</strong> En Paraguay, la Ley N° 6072/2018 (modificada y ampliada por la Ley N° 6914/2022) establece que los productos destinados a celíacos lleven, de forma clara y visible, la leyenda "sin gluten", "no contiene gluten" o "sin T.A.C.C.", y que los de elaboración nacional lleven además el símbolo nacional "sin gluten", establecido por el Decreto N° 7553/2022. Como referencia internacional, el Codex Alimentarius considera "sin gluten" a un alimento con no más de 20 mg de gluten por kilo (20 ppm). Ante la duda, preguntale a quien lo elabora cómo garantiza que su pan es sin gluten.</li>
       <li><strong>Dónde se elaboró.</strong> Un pan hecho con ingredientes sin gluten puede contaminarse si se prepara en el mismo lugar que el pan de trigo: la harina queda en el aire, en las mesadas, las bandejas, el horno o la cortadora. Si comprás pan artesanal sin envase, preguntá si la cocina es exclusiva sin gluten o cómo separan la producción.</li>
     </ol>
     <p class="text-stone-700 leading-relaxed mt-4">En casa, el mismo cuidado: una tostadora (o una bolsa para tostar) solo para el pan sin gluten, cuchillo y tabla limpios, y manteca o dulces que no hayan tocado migas de pan común. Más detalles en nuestra guía sobre <a href="/blog/contaminacion-cruzada-gluten/" class="text-brand-500 font-semibold hover:underline">contaminación cruzada</a>.</p>
@@ -586,7 +568,7 @@ tailwind.config = {
     <ul class="mt-4 space-y-2 text-stone-700">
       <li>👩‍⚕️ <strong>Personas con celiaquía</strong> diagnosticada, que necesitan una dieta estricta sin gluten de por vida.</li>
       <li>🤧 <strong>Personas con sensibilidad al gluten no celíaca</strong> que tienen molestias al consumir trigo aunque no sean celíacas.</li>
-      <li>🌾 <strong>Alérgicos al trigo</strong> que requieren evitar este cereal específicamente.</li>
+      <li>🌾 <strong>Personas con alergia al trigo:</strong> en nuestra cocina no entra harina de trigo. Ante una alergia, consultá igual con tu médico.</li>
       <li>🥗 <strong>Quienes prefieren un pan de fermentación lenta</strong>, hecho con harinas naturales.</li>
       <li>🍽️ <strong>Familias con integrantes celíacos</strong> que comparten comidas sin tener que cocinar dos veces.</li>
     </ul>
@@ -612,7 +594,7 @@ tailwind.config = {
       </details>
       <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 cursor-pointer">
         <summary class="font-semibold text-stone-900">¿Qué ingredientes tiene el pan sin gluten?</summary>
-        <p class="mt-3 text-stone-700">Harinas naturalmente libres de gluten, como trigo sarraceno, harina de arroz y almidón de mandioca, más semillas. No lleva gluten, ni TACC, ni azúcar refinada, y pasa por fermentación lenta para ganar sabor y una miga elástica.</p>
+        <p class="mt-3 text-stone-700">Harinas naturalmente libres de gluten, como trigo sarraceno, harina de arroz y almidón de mandioca, y sésamo en los panes de sándwich y de hamburguesa. No lleva gluten, ni TACC, ni azúcar refinada, y pasa por fermentación lenta para ganar sabor y una miga elástica.</p>
       </details>
       <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 cursor-pointer">
         <summary class="font-semibold text-stone-900">¿Cómo se conserva y se descongela el pan sin gluten?</summary>
@@ -624,7 +606,7 @@ tailwind.config = {
       </details>
       <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 cursor-pointer">
         <summary class="font-semibold text-stone-900">¿Por qué el pan sin gluten es más caro que el común?</summary>
-        <p class="mt-3 text-stone-700">Harinas como el trigo sarraceno y aglutinantes como el psyllium cuestan más que la harina de trigo común. Además, exige una cocina dedicada para evitar la contaminación cruzada, fermentación más larga y envasado al vacío para conservarlo.</p>
+        <p class="mt-3 text-stone-700">Porque exige harinas y aglutinantes específicos (como el trigo sarraceno y el psyllium), una cocina dedicada para evitar la contaminación cruzada, una fermentación más larga y el envasado al vacío para conservarlo.</p>
       </details>
       <details class="bg-cream-50 border border-cream-200 rounded-xl p-5 cursor-pointer">
         <summary class="font-semibold text-stone-900">¿El pan sin gluten engorda más que el pan común?</summary>
@@ -644,6 +626,16 @@ tailwind.config = {
       </details>
     </div>
 
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-stone-900 mt-12">Seguí leyendo sobre pan sin gluten</h2>
+    <ul class="mt-4 space-y-2 text-stone-700">
+      <li>🥖 <a href="/blog/pan-sin-gluten-esponjoso/" class="text-brand-500 font-semibold hover:underline">Receta de pan sin gluten esponjoso, paso a paso</a></li>
+      <li>❄️ <a href="/blog/como-descongelar-pan-sin-gluten/" class="text-brand-500 font-semibold hover:underline">Cómo descongelar pan sin gluten: 4 métodos que no arruinan la textura</a></li>
+      <li>🏭 <a href="/blog/pan-sin-gluten-industrial-vs-artesanal/" class="text-brand-500 font-semibold hover:underline">Pan sin gluten industrial vs artesanal: diferencias que importan al celíaco</a></li>
+      <li>🥪 <a href="/blog/recetas-con-pan-caprichos-sandwich-tostada/" class="text-brand-500 font-semibold hover:underline">Recetas con pan sin gluten: sándwich, tostadas y pan francés</a></li>
+      <li>🌾 <a href="/blog/harinas-sin-gluten-guia-completa/" class="text-brand-500 font-semibold hover:underline">Harinas sin gluten: cuál usar en cada receta</a></li>
+      <li>🍕 <a href="/recetas-sin-gluten/" class="text-brand-500 font-semibold hover:underline">Más recetas sin gluten fáciles: pizza y ñoquis</a></li>
+    </ul>
+
     <h2 class="font-display text-3xl md:text-4xl font-bold text-stone-900 mt-12">Sobre la autora del recetario sin gluten</h2>
     <p class="text-stone-700 leading-relaxed mt-4">La <strong>Dra. Norma Liliana Borja</strong> es médica pediatra neonatóloga (Facultad de Ciencias Médicas, UNA · Hospital Garrahan, Buenos Aires · Reg. Prof. N° 6823) y celíaca. Tras años perfeccionando fórmulas para que el pan sin gluten no se desarme, tenga miga elástica y conserve sabor real, cofundó <em>Caprichos de Lili</em> y volcó la técnica en el libro <a href="/libro-recetas-sin-gluten/" class="text-brand-500 font-semibold hover:underline">"Caprichos de Lili: Recetario Saludable Sin Gluten"</a>, del que es coautora — disponible en Amazon Kindle, con las recetas exactas en gramos, tiempos de fermentación y los trucos que solo se aprenden después de muchas tandas fallidas. <a href="/dra-norma-borja/" class="text-brand-500 font-semibold hover:underline">Ver su formación completa →</a></p>
 
@@ -654,7 +646,8 @@ tailwind.config = {
         <li>Anton AA, Artfield SD. Hydrocolloids in gluten-free breads: a review. <em>International Journal of Food Sciences and Nutrition</em>. 2008;59(1):11-23.</li>
         <li>Codex Alimentarius, CXS 118-1979: Norma relativa a los alimentos para regímenes especiales destinados a personas intolerantes al gluten.</li>
         <li>Paraguay: Ley N° 6072/2018, Ley N° 6914/2022 y Decreto N° 7553/2022 (Biblioteca y Archivo del Congreso Nacional; DINAVISA).</li>
-        <li>Rubio-Tapia A, et al. ACG Clinical Guidelines: Diagnosis and Management of Celiac Disease. <em>American Journal of Gastroenterology</em>. 2023;118(1):59-76.</li>
+        <li>Thompson T, Lee AR, Grace T. Gluten contamination of grains, seeds, and flours in the United States: a pilot study. <em>Journal of the American Dietetic Association</em>. 2010;110(6):937-940.</li>
+        <li>Rubio-Tapia A, Hill ID, Semrad C, et al. American College of Gastroenterology Guidelines Update: Diagnosis and Management of Celiac Disease. <em>American Journal of Gastroenterology</em>. 2023;118(1):59-76. doi:10.14309/ajg.0000000000002075</li>
       </ul>
       <p class="mt-3">Este contenido es informativo y no reemplaza la consulta con tu médico.</p>
     </div>
