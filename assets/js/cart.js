@@ -116,9 +116,9 @@ function buildWhatsAppMessage(form){
   lines.push(`👤 *Cliente:* ${form.nombre || '(sin nombre)'}`);
   if(form.telefono) lines.push(`📞 *Teléfono:* ${form.telefono}`);
   if(esRetiro){
-    lines.push(`🏪 *Modalidad:* Pasar a buscar (retiro en local)`);
+    lines.push(`🏪 *Modalidad:* Pasar a buscar (retiro coordinado)`);
   } else {
-    lines.push(`🚚 *Modalidad:* Envío a domicilio`);
+    lines.push(`🚚 *Modalidad:* Envío a domicilio (tercerizado, se paga aparte según distancia)`);
     lines.push(`📍 *Zona:* ${form.zona || '(no indicada)'}`);
     if(form.direccion) lines.push(`🏠 *Dirección:* ${form.direccion}`);
   }
@@ -129,9 +129,10 @@ function buildWhatsAppMessage(form){
     lines.push(`• ${item.qty}× ${item.name} — ${fmtGs(item.qty * item.price)}`);
   });
   lines.push('━━━━━━━━━━━━━━━━━━');
-  lines.push(`💰 *TOTAL:* ${fmtGs(cartTotal())}`);
+  lines.push(`💰 *TOTAL:* ${fmtGs(cartTotal())}${esRetiro ? '' : ' + envío'}`);
   if(form.comentarios) lines.push(`📝 *Comentarios:* ${form.comentarios}`);
   lines.push('');
+  lines.push('🧊 _Sé que todo llega congelado al vacío, para guardar en el freezer._');
   lines.push('_Pedido generado desde caprichosdelili.com_');
   return lines.join('\n');
 }
