@@ -137,6 +137,16 @@ function buildWhatsAppMessage(form){
   return lines.join('\n');
 }
 
+function pedirCampo(id, msg){
+  alert(msg);
+  const el = document.getElementById(id);
+  if(!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.add('ring-2', 'ring-brand-500', 'border-brand-500');
+  setTimeout(() => el.focus(), 350);
+  el.addEventListener('input', () => el.classList.remove('ring-2', 'ring-brand-500', 'border-brand-500'), { once: true });
+}
+
 function sendOrder(){
   const form = {
     nombre: document.getElementById('f-nombre')?.value.trim(),
@@ -147,13 +157,13 @@ function sendOrder(){
     fecha: document.getElementById('f-fecha')?.value,
     comentarios: document.getElementById('f-comentarios')?.value.trim()
   };
-  // validación mínima
-  if(!form.nombre){ alert('Por favor ingresá tu nombre.'); return; }
-  if(form.modalidad !== 'Pasar a buscar' && !form.zona){ alert('Por favor elegí zona de entrega.'); return; }
-  if(!form.fecha){ alert('Por favor elegí fecha de entrega.'); return; }
+  // validación mínima: avisa y lleva al campo que falta (en el celular queda más abajo, dentro del panel)
+  if(!form.nombre){ pedirCampo('f-nombre', 'Escribí tu nombre en "Tus datos", debajo de los productos.'); return; }
+  if(form.modalidad !== 'Pasar a buscar' && !form.zona){ pedirCampo('f-zona', 'Elegí la zona de entrega en "Tus datos".'); return; }
+  if(!form.fecha){ pedirCampo('f-fecha', 'Elegí la fecha de entrega en "Tus datos".'); return; }
   const minDate = todayPlus(MIN_DAYS_AHEAD);
   if(form.fecha < minDate){
-    alert(`La fecha de entrega debe ser al menos ${MIN_DAYS_AHEAD} días después de hoy (mínimo: ${fmtFechaLarga(minDate)}).`);
+    pedirCampo('f-fecha', `La fecha de entrega debe ser al menos ${MIN_DAYS_AHEAD} días después de hoy (mínimo: ${fmtFechaLarga(minDate)}).`);
     return;
   }
   const msg = buildWhatsAppMessage(form);
