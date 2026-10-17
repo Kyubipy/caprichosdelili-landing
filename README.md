@@ -13,7 +13,7 @@ Hecho por la **Dra. Norma Liliana Borja** (médica neonatóloga celíaca) y **Ro
 ## Páginas indexables
 
 - `/` — Home
-- `/pack-semanal/` — Menú completo
+- `/menu/` — Menú completo (antes /pack-semanal/, redirige 301)
 - `/pan-sin-gluten/` — Pan sin gluten Asunción
 - `/comida-sin-gluten-asuncion/` — Comida sin gluten hub
 - `/recetas-sin-gluten/` — Recetas con Recipe Schema

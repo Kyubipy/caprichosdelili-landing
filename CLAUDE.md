@@ -5,7 +5,7 @@ Sitio comercial de comida sin gluten (dark kitchen, Asunción PY). HTML estátic
 ## Reglas editoriales (NO negociables)
 
 - **NUNCA mencionar marcas, locales ni precios de competidores.** Críticas al mercado solo generalizadas.
-- **NUNCA inventar datos**: ni reviews, ni ratings, ni información nutricional, ni precios sin fuente real. Los únicos precios concretos publicables son los propios (fuente: /pack-semanal/).
+- **NUNCA inventar datos**: ni reviews, ni ratings, ni información nutricional, ni precios sin fuente real. Los únicos precios concretos publicables son los propios (fuente: /menu/, antes /pack-semanal/).
 - **Sin drama personal** de los fundadores (nada de temas médicos personales) — es un sitio de comidas.
 - Naming: "Pizzeta XL" (no "pre-pizza"), milanesas sin el adjetivo "grandes".
 - Es dark kitchen: SIN dirección pública, horario WhatsApp L-V 8:00-19:00, pedidos con 3 días de anticipación, todo congelado al vacío. No es restaurante.
