@@ -8,6 +8,9 @@ Sitio comercial de comida sin gluten (dark kitchen, Asunción PY). HTML estátic
 - **NUNCA inventar datos**: ni reviews, ni ratings, ni información nutricional, ni precios sin fuente real. Los únicos precios concretos publicables son los propios (fuente: /menu/, antes /pack-semanal/).
 - **Sin drama personal** de los fundadores (nada de temas médicos personales) — es un sitio de comidas.
 - Naming: "Pizzeta XL" (no "pre-pizza"), milanesas sin el adjetivo "grandes".
+- **El Menú está en `/menu/`** (desde el 17-oct-2026). La vieja `/pack-semanal/` solo redirige (301): NUNCA enlazarla. La página se llama "Menú"; "pack semanal" no existe.
+- **Pie de todas las páginas:** `Caprichos de Lili® es marca registrada · DINAPI Reg. N° 635868 · Clase 43 · RUC&nbsp;2368260-4`.
+- **Envío:** a domicilio por un servicio **tercerizado**, que se paga aparte según la distancia; NUNCA nombrar la empresa de envíos. La otra opción es "retiro coordinado" (nunca "en local"). Pago: efectivo o transferencia (sin tarjeta). La seña se acuerda en el chat: NO publicar cuentas bancarias ni "transferí el 50 %".
 - Es dark kitchen: SIN dirección pública, horario WhatsApp L-V 8:00-19:00, pedidos con 3 días de anticipación, todo congelado al vacío. No es restaurante.
 - Autora médica de los posts: "Dra. Norma Liliana Borja". Tono: español paraguayo (vos), cálido y honesto.
 - **Eventos** (`/eventos-sin-gluten/`, 18-sep-2026): preparamos las porciones de los invitados celíacos (bodas, 15 años, cenas, cumpleaños), sin gluten y sin lactosa a pedido. Siempre decir que llegan **congeladas al vacío** (se descongelan en heladera). NO prometer servicio en el salón, mozos ni "coordinar con el catering del salón"; NO precios de eventos (solo presupuesto por WhatsApp); NO listar un menú fijo de eventos.
