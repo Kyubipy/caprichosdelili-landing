@@ -11,7 +11,8 @@ Sitio comercial de comida sin gluten (dark kitchen, Asunción PY). HTML estátic
 - **El Menú está en `/menu/`** (desde el 17-oct-2026). La vieja `/pack-semanal/` solo redirige (301): NUNCA enlazarla. La página se llama "Menú"; "pack semanal" no existe.
 - **Pie de todas las páginas:** `Caprichos de Lili® es marca registrada · DINAPI Reg. N° 635868 · Clase 43 · RUC&nbsp;2368260-4`.
 - **Envío:** a domicilio por un servicio **tercerizado**, que se paga aparte según la distancia; NUNCA nombrar la empresa de envíos. La otra opción es "retiro coordinado" (nunca "en local"). Pago: efectivo o transferencia (sin tarjeta). La seña se acuerda en el chat: NO publicar cuentas bancarias ni "transferí el 50 %".
-- Es dark kitchen: SIN dirección pública, horario WhatsApp L-V 8:00-19:00, pedidos con 3 días de anticipación, todo congelado al vacío. No es restaurante.
+- Es dark kitchen: SIN dirección pública, horario WhatsApp L-V 8:00-19:00, pedidos con 3 días de anticipación. No es restaurante.
+- **El PAN se envía FRESCO; el resto del Menú, congelado al vacío** (Roberto, 17-oct-2026). NUNCA escribir que el pan llega congelado. Que el cliente lo congele en casa es un consejo válido; que lo mandemos congelado, no.
 - Autora médica de los posts: "Dra. Norma Liliana Borja". Tono: español paraguayo (vos), cálido y honesto.
 - **Eventos** (`/eventos-sin-gluten/`, 18-sep-2026): preparamos las porciones de los invitados celíacos (bodas, 15 años, cenas, cumpleaños), sin gluten y sin lactosa a pedido. Siempre decir que llegan **congeladas al vacío** (se descongelan en heladera). NO prometer servicio en el salón, mozos ni "coordinar con el catering del salón"; NO precios de eventos (solo presupuesto por WhatsApp); NO listar un menú fijo de eventos.
 
