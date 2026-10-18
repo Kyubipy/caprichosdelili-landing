@@ -132,7 +132,7 @@ function buildWhatsAppMessage(form){
   lines.push(`💰 *TOTAL:* ${fmtGs(cartTotal())}${esRetiro ? '' : ' + envío'}`);
   if(form.comentarios) lines.push(`📝 *Comentarios:* ${form.comentarios}`);
   lines.push('');
-  lines.push('🧊 _Sé que todo llega congelado al vacío, para guardar en el freezer._');
+  lines.push('🧊 _Sé que la comida llega congelada al vacío y el pan, fresco._');
   lines.push('_Pedido generado desde caprichosdelili.com_');
   return lines.join('\n');
 }
